@@ -5,156 +5,438 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Amazon.com: Online Shopping for Electronics, Apparel, Computers ...</title>
+    <title>AmazonHonduras.hn</title>
     <link rel="shorcut icon" href="img/amazon.ico">
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
-    <link rel="stylesheet" type="text/css" href="css/landing-page.min.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <!--<style>
-        #body {
-            background-color: rgb(234, 237, 237);
-            /*background-size:cover;
-            background-position: center center;
-            background-attachment: fixed;*/
-        }
-
-        #imgelectronics {
-
-            height: 200px;
-            width: 440px;
-            /*margin:10px 50px 10px 30px;*/
-            margin: 3px 15px;
-            margin-right: 50px;
-        }
-
-        #imgtoys {
-            height: 200px;
-            width: 440px;
-            /*margin:10px 30px 10px 50px;*/
-            margin: 3px 15px;
-            margin-left: 50px;
-        }
-
-        #carouselsmartphones img {
-            margin-right: 5px;
-        }
-
-        .shop{
-            /*background-color: rgb(255, 255, 255);
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center center;
-            height: 240px;
-            width: 960px;
-            margin: auto;
-            margin-top: 25px;
-            margin-bottom: 25 px;
-            /*margin-left: auto;
-            margin-right: auto;*/
-            /*width: 95%;
-            padding: 15px 90px;
-            box-sizing: border-box;
-            box-align: center;*/
-            background-color: rgb(255, 255, 255);
-            height: 240px;
-            width:95%;
-            margin: 25px auto;
-            padding: 15px 90px;
-            box-sizing: border-box;
-            background-size:cover;
-            background-position: center center;
-            background-attachment:fixed;
-           
-        }
-        
-
-        /*@media only screen and (max-width: 400px) {
-            .shop1{
-                width:100%;
-            }
-        }*/
-
-        /*.row #img{
-            height:200px;
-            width: 149px;
-        }*/
-
-
-        .htext {
-            color: #111 !important;
-            font-weight: 700;
-        }
-
-        /*.vl {
-
-            border-left: 0.5px solid black; 
-            left: 50%;            
-        }*/
-        /*.v{
-            border-left: 100px  black;
-            height: 100%;
-
-        }*/
-    </style>-->
+    <style>
+        @media only screen and (max-width: 1300px) {
+            #ad-electronics-toys{
+                background-color: white;
+                height: 220px;
+                width: 95%;
+                background-size: cover;
+                margin-top: 25px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px 1rem 10px 1rem;
+            }  
+        }  
+        @media only screen and (max-width: 1200px) { 
+            #toys{
+                display: none;
+            } 
+        }    
+    </style>
 </head>
 
-<body id="body">
+<body style="background-color: rgb(234, 237, 237);">
     <main>
-            <div class="shop">
-                <img id="imgelectronics" src="img/Deals in Electronics.png">
-                <img id="imgtoys" src="img/Top Toys.png">
+        <div class="container-fluid">
+            <!---->
+            <div class="row" id="div-electronics-toys">
+                <div class="col-xl-6 col-sm-12 col-xs-12">
+                    <div class="ad-image" id="electronics"></div>
+                </div>
+                <div class="col-xl-6 col-sm-12 col-xs-12">
+                    <div class="ad-image" id="toys" ></div>
+                </div>
             </div>
-                    
-        <div class="shop">
-                <!--<div class="container">-->
-                    <p class="htext">Like-new Smartphones &nbsp;<a href="">Shop now</a></p>
-                    
+
+            <!--Smartphones-->
+            <div class="shop">
+
+                <div class="htext"><h1>Like-new Smartphones &nbsp;<a href="">Shop now</a></h1></div>
                 <!--Slider-->
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="carouselIndicators1" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselIndicators1" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselIndicators1" data-slide-to="1"></li>
+                          <li data-target="#carouselIndicators1" data-slide-to="2"></li>
+                        </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                              <div class="row">
-                                    <div class="col-2"><img style="height:200px;width: 149px;" class="d-block w-100" src="img/smartphones/1.jpg" alt="Iphone 7 Plus"></div>
-                                    <div class="col-2"><img class="d-block w-100" src="img/smartphones/1.jpg" alt="Iphone 7 Plus"></div>
-                                    <div class="col-2"><img style="height:200px;width:244px;"class="d-block w-100" src="img/smartphones/2.jpg" alt="Iphone 8 Plus"></div>
-                                    <div class="col-2"><img class="d-block w-100" src="img/smartphones/3.jpg" alt="Google Pixel2"></div>
-                                    <div class="col-2"><img class="d-block w-100" src="img/smartphones/4.jpg" alt=""></div>
-                                    <div class="col-2"><img class="d-block w-100" src="img/smartphones/5.jpg" alt=""></div>
-                              </div>  
-                          </div>
-                          <div class="carousel-item">
                                 <div class="row">
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/6.jpg" alt=""></div>
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/7.jpg" alt=""></div>
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/8.jpg" alt=""></div>
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/9.jpg" alt=""></div>
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/10.jpg" alt=""></div>
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/11.jpg" alt=""></div>
+                                        <div class="col-2"><img class="imagebottom-carousel2" src="img/smartphones/1.png" alt="Smartphone1"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel2" src="img/smartphones/1.png" alt="Smartphone2"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel4" src="img/smartphones/2.png" alt="Smartphone3"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/3.png" alt="Smartphone4"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/4.png" alt="Smartphone5"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/5.png" alt="Smartphone6"></div>
                                 </div>
                           </div>
                           <div class="carousel-item">
                                 <div class="row">
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/12.jpg" alt=""></div>
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/13.jpg" alt=""></div>
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/13.jpg" alt=""></div>
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/14.jpg" alt=""></div>
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/15.jpg" alt=""></div>
-                                        <div class="col-2"><img class="d-block w-100" src="img/smartphones/16.jpg" alt=""></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/6.png" alt="Smartphone7"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/7.png" alt="Smartphone8"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/8.png" alt="Smartphone9"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/9.png" alt="Smartphone10"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/10.png" alt="Smartphone11"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/11.png" alt="Smartphone12"></div>
+                                </div>
+                          </div>
+                          <div class="carousel-item">
+                                <div class="row">
+                                        <div class="col-2"><img class="imagebottom-carousel2" src="img/smartphones/12.png" alt="Smartphone13"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/13.png" alt="Smartphone14"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/13.png" alt="Smartphone15"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel2" src="img/smartphones/14.png" alt="Smartphone16"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel2" src="img/smartphones/15.png" alt="Smartphone17"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/smartphones/16.png" alt="Smartphone18"></div>
                                 </div>
                           </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carouselIndicators1" role="button" data-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carouselIndicators1" role="button" data-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="sr-only">Next</span>
                         </a>
-                      </div>
-                <!--</div>-->
+                </div> 
+
             </div>
+
+            <!--Videogames-->
+            <div class="shop">
+
+                <div class="htext"><h1>Trending on videogames &nbsp;<a href="">See more</a></h1></div>
+                <!--Slider-->
+                <div id="carouselIndicators2" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselIndicators2" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselIndicators2" data-slide-to="1"></li>
+                          <li data-target="#carouselIndicators2" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                                <div class="row">
+                                        <div class="col-2"><img class="imagebottom-carousel5" src="img/videogames/1.png" alt="Videogame1"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel5" src="img/videogames/2.png" alt="Videogame2"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel6" src="img/videogames/3.png" alt="Videogame3"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/videogames/4.png" alt="Videogame4"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/videogames/5.png" alt="Videogame5"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel1" src="img/videogames/6.png" alt="Videogame6"></div>
+                                </div>
+                          </div>
+                          <div class="carousel-item">
+                                <div class="row">
+                                        <div class="col-2"><img class="imagebottom-carousel2" src="img/videogames/7.png" alt="Videogame7"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel2" src="img/videogames/8.png" alt="Videogame8"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel8" src="img/videogames/9.png" alt="Videogame9"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel2" src="img/videogames/10.png" alt="Videogame10"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel7" src="img/videogames/11.png" alt="Videogame11"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel2" src="img/videogames/12.png" alt="Videogame12"></div>
+                                </div>
+                          </div>
+                          <div class="carousel-item">
+                                <div class="row">
+                                        <div class="col-2"><img class="imagebottom-carousel8" src="img/videogames/13.png" alt="Videogame13"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel8" src="img/videogames/14.png" alt="Videogame14"></div>
+                                        <div class="col-2"><img class="imagebottom-carousel6" src="img/videogames/15.png" alt="Videogame15"></div>
+                                </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselIndicators2" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselIndicators2" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                </div> 
+
+              </div>
+
+              <!--Tablets-->
+              <div class="shop">
+
+                  <div class="htext"><h1>Like-new tablets &nbsp;<a href="">See more</a></h1></div>
+                  <!--Slider-->
+                  <div id="carouselIndicators3" class="carousel slide" data-ride="carousel" data-interval="false">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselIndicators3" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselIndicators3" data-slide-to="1"></li>
+                            <li data-target="#carouselIndicators3" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                  <div class="row">
+                                          <div class="col-2"><img class="imagebottom-carousel1" src="img/tablets/1.png" alt="Tablets1"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel1" src="img/tablets/2.png" alt="Tablets2"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel1" src="img/tablets/3.png" alt="Tablets3"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel1" src="img/tablets/4.png" alt="Tablets4"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel4" src="img/tablets/5.png" alt="Tablets5"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel1" src="img/tablets/6.png" alt="Tablets6"></div>
+                                  </div>
+                            </div>
+                            <div class="carousel-item">
+                                  <div class="row">
+                                          <div class="col-2"><img class="imagebottom-carousel2" src="img/tablets/7.png" alt="Tablets7"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel2" src="img/tablets/8.png" alt="Tablets8"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel2" src="img/tablets/9.png" alt="Tablets9"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel2" src="img/tablets/10.png" alt="Tablets10"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel2" src="img/tablets/11.png" alt="Tablets11"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel2" src="img/tablets/12.png" alt="Tablets12"></div>
+
+                                  </div>
+                            </div>
+                            <div class="carousel-item">
+                                  <div class="row">
+                                      <div class="col-2"><img class="imagebottom-carousel5" src="img/tablets/13.png" alt="Tablets13"></div>
+                                  </div>
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselIndicators3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselIndicators3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                  </div> 
+  
+                </div>
+
+                <!--Wireless products-->
+                <div class="shop">
+
+                    <div class="htext"><h1>Must have Wireless products &nbsp;<a href="">See more</a></h1></div>
+                    <!--Slider-->
+                    <div id="carouselIndicators4" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselIndicators4" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselIndicators4" data-slide-to="1"></li>
+                              <li data-target="#carouselIndicators4" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                    <div class="row">
+                                            <div class="col-2"><img class="imagebottom-carousel5" src="img/wireless products/1.png" alt="Wireless1"></div>
+                                            <div class="col-2"><img class="imagebottom-carousel4" src="img/wireless products/2.png" alt="Wireless2"></div>
+                                            <div class="col-2"><img class="imagebottom-carousel5" src="img/wireless products/3.png" alt="Wireless3"></div>
+                                            <div class="col-2"><img class="imagebottom-carousel4" src="img/wireless products/4.png" alt="Wireless4"></div>
+                                            <div class="col-2"><img class="imagebottom-carousel5" src="img/wireless products/5.png" alt="Wireless5"></div> 
+                                            <div class="col-2"><img class="imagebottom-carousel4" src="img/wireless products/6.png" alt="Wireless6"></div>            
+                                    </div>
+                              </div>
+                              <div class="carousel-item">
+                                    <div class="row">
+                                            <div class="col-2"><img class="imagebottom-carousel4" src="img/wireless products/7.png" alt="Wireless7"></div>
+                                            <div class="col-2"><img class="imagebottom-carousel4" src="img/wireless products/8.png" alt="Wireless8"></div>
+                                            <div class="col-2"><img class="imagebottom-carousel4" src="img/wireless products/9.png" alt="Wireless9"></div>
+                                            <div class="col-2"><img class="imagebottom-carousel4" src="img/wireless products/10.png" alt="Wireless10"></div>
+                                            <div class="col-2"><img class="imagebottom-carousel4" src="img/wireless products/11.png" alt="Wireless11"></div>
+                                            <div class="col-2"><img class="imagebottom-carousel3" src="img/wireless products/12.png" alt="Wireless12"></div>
+                                    </div>
+                              </div>
+                              <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-2"><img class="imagebottom-carousel6" src="img/wireless products/13.png" alt="Wireless13"></div>
+                                    </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselIndicators4" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselIndicators4" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                    </div> 
+    
+                  </div>
+
+                  <!--Home Entertainment-->
+                  <div class="shop">
+
+                      <div class="htext"><h1>Top products in Home Entertainment &nbsp;<a href="">Shop now</a></h1></div>
+                      <!--Slider-->
+                      <div id="carouselIndicators5" class="carousel slide" data-ride="carousel" data-interval="false">
+                              <ol class="carousel-indicators">
+                                <li data-target="#carouselIndicators5" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselIndicators5" data-slide-to="1"></li>
+                                <li data-target="#carouselIndicators5" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                      <div class="row">
+                                              <div class="col-2"><img class="imagebottom-carousel5" src="img/home entertainment/1.png" alt="Entertainment1"></div>
+                                              <div class="col-2"><img class="imagebottom-carousel5" src="img/home entertainment/2.png" alt="Entertainment2"></div>
+                                              <div class="col-2"><img class="imagebottom-carousel7" src="img/home entertainment/3.png" alt="Entertainment3"></div>
+                                              <div class="col-2"><img class="imagebottom-carousel7" src="img/home entertainment/4.png" alt="Entertainment4"></div>
+                                              <div class="col-2"><img class="imagebottom-carousel7" src="img/home entertainment/5.png" alt="Entertainment5"></div> 
+                                              <div class="col-2"><img class="imagebottom-carousel7" src="img/home entertainment/6.png" alt="Entertainment6"></div>            
+                                      </div>
+                                </div>
+                                <div class="carousel-item">
+                                      <div class="row">
+                                              <div class="col-2"><img class="imagebottom-carousel4" src="img/home entertainment/7.png" alt="Entertainment7"></div>
+                                              <div class="col-2"><img class="imagebottom-carousel7" src="img/home entertainment/8.png" alt="Entertainment8"></div>
+                                              <div class="col-2"><img class="imagebottom-carousel7" src="img/home entertainment/9.png" alt="Entertainment9"></div>
+                                              <div class="col-2"><img class="imagebottom-carousel7" src="img/home entertainment/10.png" alt="Entertainment10"></div>
+                                              <div class="col-2"><img class="imagebottom-carousel9" src="img/home entertainment/11.png" alt="Entertainment11"></div>
+                                              <div class="col-2"><img class="imagebottom-carousel7" src="img/home entertainment/12.png" alt="Entertainment12"></div>
+                                      </div>
+                                </div>
+                                <div class="carousel-item">
+                                      <div class="row">
+                                          <div class="col-2"><img class="imagebottom-carousel9" src="img/home entertainment/13.png" alt="Entertainment13"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel9" src="img/home entertainment/14.png" alt="Entertainment14"></div>
+                                          <div class="col-2"><img class="imagebottom-carousel8" src="img/home entertainment/15.png" alt="Entertainment15"></div>
+                                      </div>
+                                </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#carouselIndicators5" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselIndicators5" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                      </div> 
+      
+                    </div>
+        </div>
+
+        <div class="upperrecommendations"><hr></div>
+        <div class="recommendations">
+          <div class="text-center"><h1>We Have Recommendations for You</h1></div>
+          <div id="bottom-sign-button"><button type="button">Sign in to see personalized recommendations </button></div><br>
+          <!--carousel-recommendations-->
+          <!--Slider-->
+          <div id="carouselIndicators6" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselIndicators6" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselIndicators6" data-slide-to="1"></li>
+                        <li data-target="#carouselIndicators6" data-slide-to="2"></li>
+                        <li data-target="#carouselIndicators6" data-slide-to="3"></li>
+                    </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                          <div class="row">
+                                <div class="col-2"><img class="imagebottom-carousel6" src="img/recommendations/1.png" alt="Recommendations1"></div>
+                                <div class="col-2"><img class="imagebottom-carousel2" src="img/recommendations/2.png" alt="Recommendations2"></div>
+                                <div class="col-2"><img class="imagebottom-carousel4" src="img/recommendations/3.png" alt="Recommendations3"></div>
+                                <div class="col-2"><img class="imagebottom-carousel2" src="img/recommendations/4.png" alt="Recommendations4"></div>
+                                <div class="col-2"><img class="imagebottom-carousel1" src="img/recommendations/5.png" alt="Recommendations5"></div> 
+                                <div class="col-2"><img class="imagebottom-carousel3" src="img/recommendations/6.png" alt="Recommendations6"></div>            
+                          </div>
+                  </div>
+                  <div class="carousel-item">
+                          <div class="row">
+                                <div class="col-2"><img class="imagebottom-carousel3" src="img/recommendations/7.png" alt="Recommendations7"></div>
+                                <div class="col-2"><img class="imagebottom-carousel4" src="img/recommendations/8.png" alt="Recommendations8"></div>
+                                <div class="col-2"><img class="imagebottom-carousel1" src="img/recommendations/9.png" alt="Recommendations9"></div>
+                                <div class="col-2"><img class="imagebottom-carousel5" src="img/recommendations/10.png" alt="Recommendations10"></div>
+                                <div class="col-2"><img class="imagebottom-carousel1" src="img/recommendations/11.png" alt="Recommendations11"></div>
+                                <div class="col-2"><img class="imagebottom-carousel5" src="img/recommendations/12.png" alt="Recommendations12"></div>
+                          </div>
+                  </div>
+                  <div class="carousel-item">
+                          <div class="row">
+                                <div class="col-2"><img class="imagebottom-carousel3" src="img/recommendations/13.png" alt="Recommendations13"></div>
+                                <div class="col-2"><img class="imagebottom-carousel3" src="img/recommendations/14.png" alt="Recommendations14"></div>
+                                <div class="col-2"><img class="imagebottom-carousel3" src="img/recommendations/15.png" alt="Recommendations15"></div>
+                                <div class="col-2"><img class="imagebottom-carousel2" src="img/recommendations/16.png" alt="Recommendations16"></div>
+                                <div class="col-2"><img class="imagebottom-carousel2" src="img/recommendations/17.png" alt="Recommendations17"></div>
+                                <div class="col-2"><img class="imagebottom-carousel2" src="img/recommendations/18.png" alt="Recommendations18"></div>
+                          </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="row">
+                            <div class="col-2"><img class="imagebottom-carouselxl" src="img/recommendations/19.png" alt="Recommendations19"></div>
+                            <div class="col-2"><img class="imagebottom-carouselxl" src="img/recommendations/20.png" alt="Recommendations20"></div>
+                      </div>
+                    </div>
+              </div>
+                      <a class="carousel-control-prev" href="#carouselIndicators6" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselIndicators6" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                      </a>
+          </div> 
+        </div>
+      
     </main>
+    <footer>
+      <div class="navfooter">
+          <div class="backtop"><a href="#">Back to top</a></div>
+        <div class="container">
+          <div class="row cajafila">
+            <div class="col-xl-3 cajalista">
+                <ul>
+                  <div class="titulo">Get to know us</div>
+                  <a href=""><li>Careers</li></a>
+                  <a href=""><li>Blog</li></a>
+                  <a href=""><li>About Amazon</li></a>
+                  <a href=""><li>Investor Relations</li></a>
+                  <a href=""><li>Amazon Devices</li></a>
+                </ul>
+              
+            </div> 
+            <div class="col-xl-3 cajalista">
+                  <ul>
+                    <div class="titulo">Make Money with Us</div>
+                    <a href=""><li>Sell on Amazon</li></a>
+                    <a href=""><li>Sell Your Services on Amazon</li></a>
+                    <a href=""><li>Sell on Amazon Business</li></a>
+                    <a href=""><li>Sell Your Apps on Amazon</li></a>
+                    <a href=""><li>Become an Affiliate</li></a>
+                    <a href=""><li>Advertise Your Products</li></a>
+                    <a href=""><li>Self-Publish with Us</li></a>
+                    <a href=""><li>> See all </li></a>
+                  </ul>
+                
+            </div> 
+            <div class="col-xl-3 cajalista">
+                    <ul>
+                      <div class="titulo">Amazon Payment Products</div>
+                      <a href=""><li>Amazon Business Card</li></a>
+                      <a href=""><li>Shop with Points</li></a>
+                      <a href=""><li>Reload Your Balance</li></a>
+                      <a href=""><li>Amazon Currency Converter</li></a>                     
+                    </ul>              
+            </div> 
+            <div class="col-xl-3 cajalista">
+                  <ul>
+                    <div class="titulo">Let Us Help You</div>
+                    <a href=""><li>Your Account</li></a>
+                    <a href=""><li>Your Orders</li></a>
+                    <a href=""><li>Shipping Rates & Policies</li></a>
+                    <a href=""><li>Returns & Replacements</li></a>  
+                    <a href=""><li>Manage Your Content And Devices</li></a>
+                    <a href=""><li>Amazon Assistant</li></a>
+                    <a href=""><li>Help</li></a>                     
+                  </ul>              
+           </div> 
+          </div>
+        </div>
+        <hr style="background-color: #3A4553">
+        <div class="bottom-amazon-language-us">
+            <div class="row">
+            <div><img id="bottom-logo" src="img/logo-amazon.png" alt="logo-amazon"></div>
+            <form id="form-search-buttons" class="form-inline my-2 my-lg-0">
+            <div class="col-xl-4"><div id="bottom-language"><button type="button">English</button></div></div>
+            <div class="col-xl-4"><div id="bottom-coinage"><button type="button">USD-U.S. Dollar</button></div></div>
+            <div class="col-xl-4"><div id="bottom-country"><button type="button">United States</button></div></div></form>
+          </div>
+        </div>
+        <div class="bottom-copyright">
+          <div class="bottom-copyright-text">
+            <a href="#">Conditions of Use</a><a href="#">Privacy Notice</a><a href="#">Interest-Based Ads</a><span id="copyrights">&copy 1996-2019, Amazon.com, Inc. or its affiliates</span>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
