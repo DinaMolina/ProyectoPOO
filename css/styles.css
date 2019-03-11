@@ -1,0 +1,543 @@
+.bg-light{
+    background-color: #232F3E !important;
+    color: white;
+}
+#logo{
+    margin: 0px 35px 10px 20px
+}
+
+.navbar{
+    padding: 0em 0em 0em 0em;
+    height: 4em;
+}
+.nav{
+    background-color: #232F3E !important;
+    height: 2em;
+}
+
+.btn-secondary{
+    color: white;
+    background-color: #232F3E;
+    border-color: #232F3E;
+}
+.search-box{
+    width: 45rem !important;
+    color: black;
+    border-color: #FE7A4A;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.button{
+    background-color: #232F3E;
+    color:#C2C3C4;
+    border-color: #232F3E;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 25px 10px 10px 25px;
+}
+.dropdown{
+    margin-left: 95px;
+}
+#menu{
+    font-weight: bold;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    font-weight: 700;
+    padding-bottom: 5px;
+    line-height: 15px;
+    background-color: #233040;
+    color: white;
+    width: 7rem;
+    border-color: #233040;
+    margin-left: 103px;
+}
+.downbutton{
+    margin-top: 5px;
+}
+.postal{
+    padding: 1.8em;
+    width: 19rem;
+    border-radius: 0px;
+    margin-right: 44px;
+    background-color: white;
+    margin-top: -231px;
+}
+.col-xl-3{
+    max-width:-webkit-fill-available; 
+}
+
+.cursor{
+    color: #C2C3C4;
+    text-decoration: none;
+    border-color: #C2C3C4;
+}
+
+.shop{
+    font-size: 13px;
+}
+
+.cuadro{
+    background-repeat: no-repeat;
+    width: 8rem;
+    height: 2rem;
+    border-color:#233040;
+    margin-left: 11px;
+    margin-top: -5px;
+}
+.en{
+    width: 3rem;
+    height: 4rem;
+    margin-left: 120px;
+    margin-top: -6px;
+    border-color: transparent;
+}
+
+.sign{
+    width: 15rem;
+    border-radius: 3px;
+    font-size: 13px;
+    height: 2rem;
+    background-color: #F1C558;
+}
+.titulos{
+    font-weight: 645;
+    font-size: 21px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+}
+.all{
+    height: 2.3rem;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 2.3rem;
+    background-color: #DADADA;
+    color: #6f6f6f;
+}
+.col-sm-12{
+    margin-top: 235px;
+    width: fit-content;
+}
+
+/*Electronics-Toys*/
+#div-electronics-toys{
+    background-color: white;
+    height: 220px;
+    width: 95%;
+    background-size: cover;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 6rem 10px 6rem;
+}
+.ad-image{
+    height: 200px;
+    width: 440px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#electronics{
+    background-image: url(img/electronics.png);
+}
+
+#toys{
+    background-image: url(img/toys.png);   
+}
+
+/*carousels*/
+.shop{
+    background-color: white;
+    height: 290px;
+    width: 95%;
+    background-size: cover;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.6rem 0rem 1rem 1rem;
+}
+
+.htext{
+    height:40px;
+}
+
+h1{
+    color: #111 !important;
+    font-size: 24px !important;
+    font-weight:bold !important;
+}
+
+a{
+    font-size:17px;
+    color:#287ECA !important;
+}
+
+.imagebottom-carousel1{
+    height:200px;
+    width:145px;
+}
+.imagebottom-carousel2{
+    height:200px;
+    width:155px;
+}
+.imagebottom-carousel3{
+    height:200px;
+    width:165px;
+}
+.imagebottom-carousel4{
+    height:200px;
+    width:170px;
+}
+.imagebottom-carousel5{
+    height:200px;
+    width:190px;
+}
+.imagebottom-carousel6{
+    height:200px;
+    width:200px;
+}
+.imagebottom-carouselxl{
+    height:200px;
+    width:220px;
+}
+.imagebottom-carousel7{
+    height:170px;
+    width:160px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.imagebottom-carousel8{
+    height:180px;
+    width:180px;
+    margin-top:1rem;
+}
+.imagebottom-carousel9{
+    height:80px;
+    width:170px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.carousel-indicators{
+    height:5px;
+    padding-top:5px;
+
+}
+.carousel-indicators li{
+    width: 240px !important;
+    height: 4px !important;
+    /*background-color: rgba(128, 128, 128, 0.432) !important; */
+}
+
+.upperrecommendations{
+    height:60px;
+    width:100%;
+    position:relative;
+    background-color: white;
+    background-size: cover;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.6rem 0rem 1rem 0rem;
+}
+.upperrecommendations hr{
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+.recommendations{
+    height:370px;
+    width:100%;
+    position:relative;
+    background-color: white;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.text-center h1{
+    color: #444 !important;
+    font-size: 22px !important;
+    font-weight:400 !important;
+}
+#bottom-sign-button{
+    text-align: center!important;
+    height: 40px;
+    padding-top: 5px;
+}
+#bottom-sign-button button{
+    color:#111;
+    border: 0;
+    border-radius:3px;
+    font-size: 13px;
+    line-height: 29px;
+    margin: 0;
+    padding: 0 10px 0 11px;
+    text-align: center;
+    background: #f0c966;
+    border-color: #a88734 #9c7e31 #846a29;;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none!important;
+    vertical-align: middle;
+}
+#bottom-sign-button button:hover{
+    background: #f7c64b;
+    border-color: #a88734 #9c7e31 #846a29;  
+}
+.navfooter{
+    width:100%;
+    height:560px;
+    background-color:#232F3E !important;
+    padding:0 !important;
+}
+.backtop{
+    background-color: #37475a !important;
+    width: 100%;
+    height: 49px;
+    text-align:center;
+    padding:13px 0;
+}
+.backtop:hover{
+    background-color: #485769 !important;
+}
+.backtop a{
+    color:#fff !important;
+    font-size:13px;
+    text-align: center;
+    text-decoration: none !important;
+}
+.cajafila{
+    padding: 3rem;
+    height:295px
+}
+.cajalista{
+    width:100%;
+    height:236px;
+    margin:0 auto;
+    display:table-cell;
+}
+.cajalista a:hover{
+    text-decoration:underline;
+    color:#C6C8CA !important;
+}
+.titulo{
+    width:210px;
+    font-weight:700;
+    font-size:16px;
+    font-family: arial,sans-serif;
+    color:white;
+    margin:6px 0 12px 0;
+}
+
+li{
+    list-style-type: none;
+    color:#C6C8CA;
+    font-family: arial,sans-serif;
+    font-size:13px;
+    margin:3px 0;
+}
+.bottom-amazon-language-us{
+    height:68px;
+    width: 100%;
+    padding: 1rem 8rem 1rem 23rem;
+}
+#bottom-logo{
+    height: 23px;
+    width: 76px;
+    margin:1rem 3rem 5px 3rem;
+}
+.bottom-copyright{
+    background-color: #131A22;
+    padding-top:2rem;
+    margin-top:2rem;
+    height:85px;
+    width:100%;
+}
+#bottom-language button{
+    height:35px;
+    width:117px;
+    display: inline-block!important;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    padding: 6px 18px 6px 8px;
+    font-size: 13px;
+    margin-right: 4px;
+    background-color: #232F3E !important;
+    color:#ACAEB1;
+}
+#bottom-coinage button{
+    height:35px;
+    width:120px;
+    display: inline-block!important;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    padding: 6px 18px 6px 8px;
+    font-size: 13px;
+    margin-right: 4px;
+    background-color: #232F3E !important;
+    color:#ACAEB1;
+}
+#bottom-country button{
+    height:35px;
+    width:125px;
+    display: inline-block!important;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    padding: 6px 18px 6px 8px;
+    font-size: 13px;
+    margin-right: 4px;
+    background-color: #232F3E !important;
+    color:#ACAEB1;
+}
+.form-inline{
+    padding:2px;
+    width:380px;
+}
+.bottom-copyright-text{
+    text-align: center;
+}
+.bottom-copyright-text a{
+    margin-right:5px;
+    color:#DDD !important;
+    font-family: arial,sans-serif;
+    font-size:13px;
+}
+#copyrights{
+    color:#999;
+    font-family: arial,sans-serif;
+    font-size:11px;
+}
+
+/*Estilos Login inicio*/
+#logo img{
+    width: 100;   
+}
+#login{
+    color: rgb(0, 0, 0);
+    width: 300;
+    height: 400;  
+    margin: auto;    
+    border: 1px solid #DDDDDD;
+    padding: 10px 20px 10px 20px;
+}
+#login h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0 0 4px 0;
+}
+.caja-texto{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #A6A6A6;
+    border-radius: 3px;
+    margin: 0% 0% 10% 0%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.caja-texto:hover{
+    cursor: text;
+}
+.caja-texto:focus{
+    border-color:#E77600 ;
+    box-shadow: 0 0 6px 0 #E77600;
+}
+#login input[type="button"]{
+    width: 100%;
+    height: 30px;
+    color: black;
+    background-color: #F2CB6A;
+    border: 1px solid #9C7E31;
+    border-radius: 3px;
+}
+#login input[type="button"]:hover{
+background-color: #F0C351;
+cursor: pointer;
+}
+.password{
+   padding-left: 29%;
+    text-decoration: none;
+    color: #005CC5;
+}
+#login a{
+    text-decoration: none;
+    color: #005CC5;
+}
+#login a:hover{
+    text-decoration: underline;
+    color:#C45500;
+}
+#new{
+    color: grey;
+    font-size: 12px;
+}
+#new input[type="button"]{
+ background-color: rgba(219, 222, 228, 0.87);
+ border: 1px solid #979AA1;
+ margin-top: 4px;
+}
+#new input[type="button"]:hover{
+    background-color: rgba(175, 176, 179, 0.616);
+    border: 1px solid rgb(146, 146, 146);
+}
+#registro {
+    color: rgb(0, 0, 0);
+    width: 300;
+    height: 480;  
+    margin: auto;    
+    border: 1px solid #DDDDDD;
+    padding: 10px 20px 10px 20px;
+}
+#registro h1{
+    margin-top: auto;
+}
+#registro h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0 0 4px 0;
+}
+#registro h6{
+    margin: 0px 0px 24px 0px;
+}
+#registro p{
+    font-size: 14px
+}
+.caja-texto{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #A6A6A6;
+    border-radius: 3px;
+    margin: 0% 0% 6% 0%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#registro .caja-texto:focus{
+    border-color:#E77600 ;
+    box-shadow: 0 0 6px 0 #E77600;
+}
+#registro input[type="button"]{
+    width: 100%;
+    height: 30px;
+    color: black;
+    background-color: #F2CB6A;
+    border: 1px solid #9C7E31;
+    border-radius: 3px;
+}
+#registro input[type="button"]:hover{
+background-color: #F0C351;
+cursor: pointer;
+}
+.password{
+   padding-left: 29%;
+    text-decoration: none;
+    color: #005CC5;
+}
+#registro a{
+    text-decoration: none;
+    color: #005CC5;
+}
+#registro a:hover{
+    text-decoration: underline;
+    color:#C45500;
+}
+/*Estilos Login final*/
