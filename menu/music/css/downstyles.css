@@ -1,0 +1,42 @@
+#cuadro1{
+    background-color: #232F3E;
+    height: 400px;
+    margin-top: 761px;
+}
+#cuadro2{
+    background-color: #131A22;
+    height: 148px;
+    color: white;
+}
+
+.columna{
+    width: 125px;
+    margin-left: 85px;
+}
+.columna2{
+    width: 132px;
+    margin-top: -155px;
+    margin-left: 350px;
+}
+.columna3{
+    margin-top: -295px;
+    margin-left: 680px;
+}
+.columna4{
+    margin-left: 1020px;
+    margin-top: -128px;
+}
+
+.title3{
+    margin-bottom: -0.5rem;
+    font-size: 16px;
+    color: white;
+    font-family: arial,sans-serif;
+    font-weight: bold;
+
+}
+.text{
+    font-size: 13px;
+    color: white;
+    font-family: arial,sans-serif;
+}
