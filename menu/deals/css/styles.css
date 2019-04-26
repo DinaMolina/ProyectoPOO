@@ -240,7 +240,6 @@ h1{
     margin-bottom: 1rem !important;
 }
 .recommendations{
-    /*height:370px;*/
     width:100%;
     position:relative;
     background-color: white;
@@ -343,11 +342,9 @@ h1{
     background-color: #131A22;
     padding-top:2rem;
     margin-top:2rem;
-    /*height:350px;*/
     width:100%;
 }
 #bottom-language button{
-    /*height:35px;*/
     width:117px;
     display: inline-block;
     border: 1px solid #848688;
@@ -359,7 +356,6 @@ h1{
     color:#ACAEB1;
 }
 #bottom-coinage button{
-    /*height:35px;*/
     width:120px;
     display: inline-block;
     border: 1px solid #848688;
@@ -371,7 +367,6 @@ h1{
     color:#ACAEB1;
 }
 #bottom-country button{
-    /*height:35px;*/
     width:125px;
     display: inline-block;
     border: 1px solid #848688;
@@ -420,7 +415,6 @@ h1{
     color:#999 !important;
     font-family: arial,sans-serif;
     font-size: 10px;
-    /*line-height: 110%;*/
     white-space: nowrap;
     
 }
@@ -460,7 +454,6 @@ a:hover {
   @media only screen and (max-width: 1300px) {
     #div-electronics-toys {
       background-color: white;
-      /*height: 220px;*/
       width: 95%;
       background-size: cover;
       margin-top: 25px;
@@ -516,14 +509,12 @@ a:hover {
     }
 
     .bottom-amazon-language-us {
-     /*height: 110px;*/
       padding-left:18rem;
     }
   }
 
   @media only screen and (max-width: 991px) {
     .bottom-amazon-language-us {
-      /*height: 180px;*/
       padding-left:14rem;
     }
 
@@ -554,7 +545,6 @@ a:hover {
     }
     .bottom-amazon-language-us {
       margin-top:2rem;
-      /*height: 200px;*/
     }
 
     .form-inline{
@@ -562,22 +552,18 @@ a:hover {
       height:100px;
     }
     .bottom-options {
-      /*height: 175px;*/
       margin-top:5rem;
     }
   }
   @media only screen and (max-width: 790px) {
     .navfooterrowbox {
-      /*height: 700px;*/
       margin-bottom:3rem;
     }
     .bottom-amazon-language-us {
       margin-top:10rem;
-      /*height: 220px;*/
       padding-left:26rem;
     }
     .bottom-options {
-      /*height: 175px;*/
       margin-top:1rem;
     }
   }

@@ -1,7 +1,39 @@
 /*Deals*/
+/*SearchBox*/
 .all{
     width:4rem;
 }
+/*SearchBox Final*/
+/*Media Query Header*/
+@media only screen and (max-width: 1335px){
+    #barraopciones{
+        background-color: #232F3E !important;
+        height: 85px;
+    }
+}
+@media only screen and (max-width: 1180px){
+    #LogoAmazonHeader2{
+        display:none;
+    }
+}
+@media only screen and (max-width: 991px){
+    #LogoAmazonHeader2{
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 768px){
+    #barraopciones{
+        background-color: #232F3E !important;
+        height: 130px;
+    }
+}
+@media only screen and (max-width: 576px){
+    #barraopciones{
+        background-color: #232F3E !important;
+        height: 150px;
+    }
+}
+/*Media Query Header Final*/
 #firsth1{
     padding-right: 10px;
     padding-left: 10px;
@@ -17,25 +49,7 @@
     padding-left: 10px;
     margin-bottom: 4rem;
 }
-#results-sort{
-    padding-left: 21px;
-    padding-right: 21px;
-    margin: 8px 1rem 10px 1rem !important;
-}
-#results{
-    width:80%;
-    float:left;
-}
-#sort{
-    float:right;
-}
-.relevance{
-    background-color: #E0E3E8;
-    font-size: 12px;
-    height: 20px;
-    line-height: 20px;
-    padding: 0 6px 0 7px;
-}
+
 .general-box{
     background-color: #FFF;
     background-size: cover;
@@ -67,7 +81,7 @@
 }
 .deal-boxoptions{
     background-color: #F5F5F5;
-    width: 17%;
+    width: 18%;
     margin-right: 15px;
     float: left;
     height: auto;
@@ -151,4 +165,3 @@
     background: #f7c64b;
     border-color: #a88734 #9c7e31 #846a29;
 }
-

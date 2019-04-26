@@ -1,6 +1,151 @@
-<footer>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Deals</title>
+  <link rel="shorcut icon" href="../imgcomunes/amazon.ico?v=<?php echo time(); ?>">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/stylesdeals.css?v=<?php echo time(); ?>">
+</head>
+
+<body style="background-color:#FFFFFF">
+  <nav class="navbar navbar-expand-lg bg-light">
+      <a class="navbar-brand" href="#"><img id="logo" src="../imgcomunes/logo.png" alt="LogoAmazon" > 
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+    <!--Barra de search-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+        <form class="form-inline my-2 my-lg-0 "style="width: 100%;">
+            <select class="all">
+                <option>Deals</option>
+            </select>
+            <input class="search-box form-control mr-sm-2 " type="search" aria-label="Search" style="background-image:url(../imgcomunes/lupa.png);">
+        </form>
+      </div>
+      <a id="LogoAmazonHeader2" class="navbar-brand" href="#"><img  src="../imgcomunes/logo.png" alt="LogoAmazon" > 
+      </a>
+    </nav>
+  <!--Barra de opciones-->
+  <div id="barraopciones">
+    <ul class="nav">
+      <li class="nav-item letters">
+        <img src="../imgcomunes/lugar.png" style="width: 97px;
+    height: 32px;">
+      </li>
+      <li class="nav-item letters">
+        <!--Menú de los departamentos-->
+        <select id="menu">
+        </select>
+      </li>
+      <li class="nav-item ">
+        <a class="button" href="anchors.html">Your Amazon.com</a>
+      </li>
+      <li class="nav-item">
+        <a href="anchors.html" class="button">Today's Deals</a>
+      </li>
+      <a class="button downbutton" href="anchors.html" style="height:27px;">Gift Cards</a>
+      </li>
+      <li class="nav-item ">
+        <a class="button" href="anchors.html">Registry</a>
+      </li>
+      </li>
+      <a class="button downbutton" href="anchors.html" style="height:27px;">Sell</a>
+      </li>
+      </li>
+      <a class="button downbutton" href="anchors.html" style="height:27px;">Help</a>
+      </li>
+      <li class="nav-item letters">
+      <li>
+        <select id="idioma" class="en" style="background-image: url(../imgcomunes/en.png);height:38px;">
+        </select>
+      </li>
+      <li>
+        <select id="lista" class="cuadro" style="background-image: url(../imgcomunes/lista.png);">
+        </select>
+      </li>
+      <li>
+        <a href="#"><img style="margin-left: 17px; margin-top: -3px;" src="../imgcomunes/orden.png" alt="LogoAmazon">
+        </a>
+      </li>
+      <li>
+        <a href="#"><img style="margin-top: -5px; margin-left: 5px; width: 84px; height: 37px;" src="../imgcomunes/carrito.png" alt="LogoAmazon">
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div id="firsth1">
+    <h1 style="font-size: 28px; line-height: 1.2;"><b style="font-weight:700">Deals and Promotions</b></h1>
+    <p>Shop Today’s Deals, Lightning Deals, and limited-time discounts</p>
+  </div>
+  <div id="containeradimage1">
+      <img src="img/AMZNOutletDeals.jpg" alt="AmazonOutletDeals" style="width:100%; height:180px;">
+  </div>
+  </div>
+  <div class="container-fluid">
+      <div class="row general-box">
+        <div class="deal-boxoptions">
+            <div class="filter-items">
+                <div><span class="text-bold">Department</span></div>
+                <div id="deal-chk">
+                </div>
+            </div>
+            <div class="filter-items">
+                <div><span class="text-bold">Deal Type</span></div>
+                <div id="deal-type">
+                  <a class="anchor-label">Deal of the Day</a><br>
+                  <a class="anchor-label">Lightning Deals</a><br>
+                  <a class="anchor-label">Savings & Sales</a><br>
+                  <a class="anchor-label">Prime Early Access Deals</a><br>
+                </div>
+            </div>
+            <div class="filter-items">
+                <div><span class="text-bold">Availability</span></div>
+                <div id="availability">
+                  <input type="checkbox" name="chk-availability[]" id="chk-availability0" value="0"><label for="chk-availability0"><span class="text-label">&nbsp;Active</span></label><br>
+                  <input type="checkbox" name="chk-availability[]" id="chk-availability1" value="1"><label for="chk-availability1"><span class="text-label">&nbsp;Upcoming</span></label><br>
+                  <input type="checkbox" name="chk-availability[]" id="chk-availability2" value="2"><label for="chk-availability2"><span class="text-label">&nbsp;Missed</span></label><br>
+                </div>
+            </div>
+            <div class="filter-items">
+                <div><span class="text-bold">Price</span></div>
+                <div id="price">
+                  <a class="anchor-label">Under $25</a><br>
+                  <a class="anchor-label">$25 to $50</a><br>
+                  <a class="anchor-label">$50 to $100</a><br>
+                  <a class="anchor-label">$100 to $200</a><br>
+                  <a class="anchor-label">$200 & Above</a><br>
+                </div>
+            </div>
+            <div class="filter-items">
+                <div><span class="text-bold">Discount</span></div>
+                <div id="discount">
+                  <a class="anchor-label">10% Off or More</a><br>
+                  <a class="anchor-label">25% Off or More</a><br>
+                  <a class="anchor-label">50% Off or More</a><br>
+                  <a class="anchor-label">70% Off or More</a><br>
+                </div>
+            </div>
+        </div>  
+        <div id="principal-dealitems">
+              <div class="row" id="dealItems">
+                                          
+              </div>
+        </div>
+      </div> 
+  </div>
+
+  <footer>
     <div class="navfooter">
-      <div class="backtop"><a href="index.html">Back to top</a></div>
+      <div class="backtop"><a href="deals.html">Back to top</a></div>
       <div class="container">
         <div class="row navfooterrowbox">
           <div class="col-lg-3 col-md-6 col-12 navfooterboxlist">
@@ -287,6 +432,11 @@
       </div>
     </div>
   </footer>
+        
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/controlador.js?v=<?php echo time(); ?>"></script>
+  <script src="js/controladordeals.js?v=<?php echo time(); ?>"></script>
+</body>
 
-
-  
+</html>
