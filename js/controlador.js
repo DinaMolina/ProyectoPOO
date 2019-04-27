@@ -13,10 +13,10 @@ var postales= [
 ];
 
 var departamentos=[    
-    {area:'Departments'},{area:'Prime Video'},{area:'Music, CDs & Vinyl'},{area:'Digital Musical'},{area:'Kindle Store'},{area:'Arts & Crafts'},{area:'Automotive'},{area:'Baby'},
-    {area:'Beauty & Personal Care'},{area:'Book'},{area:'Computers'},{area:'Electronics'},{area:"Women's Fashion"},{area:"Men's Fashion"},{area:'Health & Household'},
-    {area:'Home and kitchen'},{area:'Industrys & Scientific'},{area:'Luggage'},{area:'Movies & Televisor'},{area:'Pet Supplies'},{area:'Software'},{area:'Sports & Outdoors'},
-    {area:'Tools & Home Improvement'},{area:'Toys & Games'},{area:'Video Games'},{area:'Deals'},
+    {area:'Departments',url:'#'},{area:'Prime Video',url:'#'},{area:'Music, CDs & Vinyl' ,url:'menu/music/index1.1.html'},{area:'Digital Musical' ,url:'#'},{area:'Kindle Store' ,url:'#'},{area:'Arts & Crafts' ,url:'#'},{area:'Automotive' ,url:'#'},{area:'Baby' ,url:'#'},
+    {area:'Beauty & Personal Care' ,url:'#'},{area:'Book' ,url:'#'},{area:'Computers' ,url:'#'},{area:'Electronics' ,url:'#'},{area:"Women's Fashion" ,url:'#'},{area:"Men's Fashion" ,url:'#'},{area:'Health & Household' ,url:'#'},
+    {area:'Home and kitchen' ,url:'#'},{area:'Industrys & Scientific' ,url:'#'},{area:'Luggage' ,url:'#'},{area:'Movies & Televisor' ,url:'#'},{area:'Pet Supplies' ,url:'#'},{area:'Software' ,url:'#'},{area:'Sports & Outdoors' ,url:'#'},
+    {area:'Tools & Home Improvement' ,url:'#'},{area:'Toys & Games' ,url:'#'},{area:'Video Games' ,url:'#'},{area:'Deals' ,url:'#'},
 ];
 
 var lista1=[
@@ -53,7 +53,7 @@ function menu(){
     $('#menu').empty();
     for(var i=0; i<departamentos.length; i++){
        $('#menu').append(`<option value=${i}>
-       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <a class="btn btn-secondary dropdown-toggle" href="${departamentos[i].url}" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          ${departamentos[i].area}
        </a>
    </option>`);
