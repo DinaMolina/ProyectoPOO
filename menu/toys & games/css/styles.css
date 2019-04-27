@@ -26,6 +26,8 @@
     border-color: #FE7A4A;
     background-repeat: no-repeat;
     background-position: right;
+    margin-left: 50px;
+    margin-top: -38px;
 }
 .button{
     background-color: #232F3E;
@@ -62,6 +64,7 @@
     margin-right: 44px;
     background-color: white;
     margin-top: -231px;
+    height: 454px;
 }
 .col-xl-3{
     max-width:-webkit-fill-available; 
@@ -112,6 +115,7 @@
     width: 2.3rem;
     background-color: #DADADA;
     color: #6f6f6f;
+    margin-left: 13px;
 }
 .col-xl-12{
     margin-top: 235px;
@@ -379,7 +383,7 @@ h1{
 }
 .form-inline{
     padding:2px;
-    width:380px;
+    width:440px;
 }
 
 .tablebox{
