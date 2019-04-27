@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pet Supplies</title>
+  <title>Toys & Games</title>
   <link rel="shorcut icon" href="../imgcomunes/amazon.ico?v=<?php echo time(); ?>">
   <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css?v=<?php echo time(); ?>">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/stylespet.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/stylestoysgames.css?v=<?php echo time(); ?>">
 </head>
 
 <body style="background-color:#FFFFFF">
@@ -25,7 +25,7 @@
           <li class="nav-item active">
         <form class="form-inline my-2 my-lg-0 "style="width: 100%;">
             <select class="all">
-                <option>Pet Supplies</option>
+                <option>Toys & Games</option>
             </select>
             <input class="search-box form-control mr-sm-2 " type="search" aria-label="Search" style="background-image:url(../imgcomunes/lupa.png);">
         </form>
@@ -84,36 +84,59 @@
 
   <div class="container-fluid">
     <div class="row general-box">
-        <div class="pet-boxleft">
+        <div class="toysgames-boxleft">
             <div class="boxleft-items">
-                <p class="title-gray-left spacing-base"><b>Show Results For</b></p>
-                <p class="title-black-left spacing-base">Pet Supplies</p>
-                <div class="list-item-left">
-                    <div>
-                        <a class="anchor-item-left" href="#">Dogs</a><br>
-                        <a class="anchor-item-left" href="#">Cats</a><br>
-                        <a class="anchor-item-left" href="#">Fish & Aquatic Pets</a><br>
-                        <a class="anchor-item-left" href="#">Birds</a><br>
-                        <a class="anchor-item-left" href="#">Horses</a><br>
-                        <a class="anchor-item-left" href="#">Reptiles & Amphibians</a><br>
-                    </div>
+                <p class="title-gray-left marginbottom"><b>Show Results For</b></p>
+                <p class="title-black-left spacing-base">Age Range</p>
+                <div class="checkbox-item">
+                    <label><input type="checkbox" name="chk-agerange[]" id="chk-agerange0" value="0"><span class="text-label">&nbsp;Birth to 24 Months</span></label><br>
+                    <label><input type="checkbox" name="chk-agerange[]" id="chk-agerange1" value="1"><span class="text-label">&nbsp;2 to 4 Years</span></label><br>
+                    <label><input type="checkbox" name="chk-agerange[]" id="chk-agerange2" value="2"><span class="text-label">&nbsp;5 to 7 Years</span></label><br>
+                    <label><input type="checkbox" name="chk-agerange[]" id="chk-agerange3" value="3"><span class="text-label">&nbsp;8 to 13 Years</span></label><br>
+                    <label><input type="checkbox" name="chk-agerange[]" id="chk-agerange4" value="4"><span class="text-label">&nbsp;14 Years & Up</span></label><br>  
                 </div>
                 <hr>
-                <p class="title-gray-left spacing-base"><b>Refine By</b></p>
-                <p class="title-black-left spacing-base">Featured Brands</p>
-                <div class="checkbox-item">
-                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands0" value="0"><span class="text-label">&nbsp;Alfred Music</span></label><br>
-                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands1" value="1"><span class="text-label">&nbsp;Hal Leonard</span></label><br>
+                <p class="title-black-left margin-item nomargin">Toys & Games</p>
+                <div class="list-item-left">
+                        <div>
+                            <a class="anchor-item-left" href="#">Action Figures & Statues</a><br>
+                            <a class="anchor-item-left" href="#">Kids' Electronics</a><br>
+                            <a class="anchor-item-left" href="#">Grown-Up Toys</a><br>
+                            <a class="anchor-item-left" href="#">Learning & Education</a><br>
+                            <a class="anchor-item-left" href="#">Stuffed Animals & Plush Toys</a><br>
+                            <a class="anchor-item-left" href="#">Toy Remote Control & Play</a><br>
+                            <a class="anchor-item-left" href="#">Vehicles</a><br>
+                        </div>
                 </div>
-                <p class="title-black-left spacing-base margin-item">New Arrivals</p>
+                <hr>
+                <p class="title-gray-left marginbottom"><b>Refine By</b></p>
+                <p class="title-black-left spacing-basesmall">Featured Characters & Brands</p>
                 <div class="list-item-left-nomargin">
                     <div>
-                        <a class="anchor-item-left" href="#">Last 30 Days</a><br>
-                        <a class="anchor-item-left" href="#">Last 90 Days</a><br>
+                        <a class="anchor-item-left" href="#">Big Bird</a><br>
+                        <a class="anchor-item-left" href="#">Game of Thrones</a><br>
+                        <a class="anchor-item-left" href="#">Little People</a><br>
                     </div>
                 </div>
-                <p class="title-black-left spacing-base margin-item">Price</p>
-                <div class="list-item-left-nomargin">
+                <p class="title-black-left spacing-basesmall margin-item">Interest</p>
+                <div class="list-item-left-nomargin spacing-base">
+                    <div>
+                        <a class="anchor-item-left" href="#">Animals & Nature</a><br>
+                        <a class="anchor-item-left" href="#">Fantasy & Sci-Fi</a><br>
+                        <a class="anchor-item-left" href="#">Learning</a><br>
+                        <a class="anchor-item-left" href="#">Music</a><br>
+                        <a class="anchor-item-left" href="#">Transportation</a><br>
+                    </div>
+                </div>
+                <p class="title-black-left spacing-base">Featured Brands</p>
+                <div class="checkbox-item spacing-basemedium">
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands0" value="0"><span class="text-label">&nbsp;Chronicle Books</span></label><br>
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands1" value="1"><span class="text-label">&nbsp;Mudpuppy</span></label><br>
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands2" value="2"><span class="text-label">&nbsp;Galison</span></label><br>
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands3" value="3"><span class="text-label">&nbsp;Kinze Manufacturing, Inc.</span></label><br> 
+                </div>
+                <p class="title-black-left spacing-basesmall margin-item">Price</p>
+                <div class="list-item-left-nomargin spacing-base">
                         <div>
                             <a class="anchor-item-left" href="#">Under $25</a><br>
                             <a class="anchor-item-left" href="#">$25 to $50</a><br>
@@ -125,9 +148,9 @@
                 <p class="title-black-left spacing-base margin-item">Seller</p>
                 <div class="checkbox-item">
                     <label><input type="checkbox" name="chk-seller[]" id="chk-seller0" value="0"><span class="text-label">&nbsp;Amazon.com</span></label><br>
-                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller1" value="1"><span class="text-label">&nbsp;Jenson Books Inc</span></label><br>
-                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller2" value="2"><span class="text-label">&nbsp;Recover Books</span></label><br>
-                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller3" value="3"><span class="text-label">&nbsp;Pet Absolute</span></label><br>
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller1" value="1"><span class="text-label">&nbsp;CHIPMUNKK</span></label><br>
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller2" value="2"><span class="text-label">&nbsp;Kinze Manufacturing Inc.</span></label><br>
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller3" value="3"><span class="text-label">&nbsp;Dontu Best Shop</span></label><br>
                 </div>
                 <p class="title-black-left spacing-base margin-item">Availability</p>
                 <div class="checkbox-item">
@@ -137,42 +160,90 @@
         </div>
         <div class="principal-boxrightitems">
             <div class="divfirsth1">
-                <h1><b>Pet Supplies</b></h1>
-                <p>Shop for dogs, cats, fish, small animals and more</p>
+                <h1><b>Toys and Games</b></h1>
+                <p>Shop action figures, arts and crafts, dolls, puzzles, learning toys and more</p>
             </div>
             <hr>
             <div class="marginbottom">
                 <div class="title-secondary">SHOP BY CATEGORY</div>
                 <div class="row category-row">
-                    <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
                         <a class="anchor-category" href="#">
-                                <div class="text-category">DOGS</div>
-                                <div class="category-imageitem" style="background-image: url(img/categorydog.jpg);"></div>
+                                <div class="text-category">ACTION FIGURES</div>
+                                <div class="category-imageitem" style="background-image: url(img/categoryactionfigures.jpg);"></div>
                         </a>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
                             <a class="anchor-category" href="#">
-                                    <div class="text-category">CATS</div>
-                                    <div class="category-imageitem" style="background-image: url(img/categorycat.jpg);"></div>
+                                    <div class="text-category">ARTS & CRAFTS</div>
+                                    <div class="category-imageitem" style="background-image: url(img/categoryartscrafts.jpg);"></div>
                             </a>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
                             <a class="anchor-category" href="#">
-                                    <div class="text-category">FISH & AQUATIC PETS</div>
-                                    <div class="category-imageitem" style="background-image: url(img/categoryfish.jpg);"></div>
+                                    <div class="text-category">BABY & TODDLER TOYS</div>
+                                    <div class="category-imageitem" style="background-image: url(img/categorybabytoys.jpg);"></div>
                             </a>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
                             <a class="anchor-category" href="#">
-                                    <div class="text-category">SMALL ANIMALS</div>
-                                    <div class="category-imageitem" style="background-image: url(img/categorysmallanimals.jpg);"></div>
+                                    <div class="text-category">DOLLS & ACCESORIES</div>
+                                    <div class="category-imageitem" style="background-image: url(img/categorydolls.jpg);"></div>
                             </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">GAMES</div>
+                                <div class="category-imageitem" style="background-image: url(img/categorygames.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">DRESS UP & PRETEND PLAY</div>
+                                <div class="category-imageitem" style="background-image: url(img/categorydressup.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">HOBBIES</div>
+                                <div class="category-imageitem" style="background-image: url(img/categoryhobbies.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">LEARNING & EDUCATION</div>
+                                <div class="category-imageitem" style="background-image: url(img/categorylearningeducation.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">PUZZLES</div>
+                                <div class="category-imageitem" style="background-image: url(img/categorypuzzles.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">SPORTS & OUTDOOR PLAY</div>
+                                <div class="category-imageitem" style="background-image: url(img/categorysports.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">STUFFED ANIMALS & PLUSH TOYS</div>
+                                <div class="category-imageitem" style="background-image: url(img/categoryplush.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">TOY REMOTE CONTROL & PLAY VEHICLES</div>
+                                <div class="category-imageitem" style="background-image: url(img/categorytoyremote.jpg);"></div>
+                        </a>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="container margintop">
-                <div class="row" id="petItems">
+                <div class="row" id="toysgamesItems">
                         
                 </div>
             </div>
@@ -181,7 +252,7 @@
   </div>
   <footer>
         <div class="navfooter">
-          <div class="backtop"><a href="petsupplies.html">Back to top</a></div>
+          <div class="backtop"><a href="toysgames.html">Back to top</a></div>
           <div class="container">
             <div class="row navfooterrowbox">
               <div class="col-lg-3 col-md-6 col-12 navfooterboxlist">
@@ -472,7 +543,7 @@
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/controlador.js?v=<?php echo time(); ?>"></script>
-      <script src="js/controladorpet.js?v=<?php echo time(); ?>"></script>
+      <script src="js/controladortoysgames.js?v=<?php echo time(); ?>"></script>
     </body>
     
     </html>

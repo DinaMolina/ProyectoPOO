@@ -1,7 +1,7 @@
-/*Software*/
+/*VideoGames*/
 /*SearchBox*/
 .all{
-    width:5rem;
+    width:6rem;
 }
 /*SearchBox Final*/
 /*Media Query Header*/
@@ -43,7 +43,7 @@
     margin-right: auto;  
     margin-bottom: 7rem;  
 }
-.software-boxleft{
+.videogames-boxleft{
     margin-bottom: 20px;
     float: left;
     line-height:15px;
@@ -105,8 +105,7 @@
 h1 {
     font-weight: 400 !important;
     font-size: 28px !important;
-    line-height: 1.2 !important;
-    padding-bottom: 4px;
+    line-height: 0.8 !important;
 }
 .principal-boxrightitems{
     width:80% !important;
@@ -121,6 +120,9 @@ h1 {
 .divfirsth1{
     box-sizing: border-box;
     padding-left:1rem;
+}
+.divfirsth1 p{
+    font-weight:450;
 }
 .title-secondary{
     font-weight: 450;
@@ -149,20 +151,20 @@ h1 {
     width:210px;
 }
 .category-imageitem{
-    width:210px;
-    height:160px;
+    width:220px;
+    height:170px;
     box-sizing:border-box;
     background-size: cover;
 }
 .col-xl-12{
     margin-top:1rem !important;
 }
-.td-softwareitem{
+.td-videogamesitem{
     border-bottom:1px solid #DDDDDD;
     width:-webkit-fill-available;
     box-sizing: border-box;
 }
-.box-softwareitems{
+.box-videogamesitems{
     width:95%;
     margin-left:auto;
     margin-right:auto;
@@ -170,13 +172,13 @@ h1 {
     margin-bottom:9rem;
     
 }
-.boxleft-softwareItems{
+.boxleft-videogamesItems{
     float: left;
     width: 25%;
     margin-left:1rem;
     margin-right:1rem;
 }
-.software-imageitem{
+.videogames-imageitem{
     height:210px;
     width:190px;
 }
@@ -193,13 +195,13 @@ h1 {
     color:#CD7029 !important;
     text-decoration: none !important;
 }
-.softwareContenido{
+.videogamesContenido{
     line-height: 2!important;
     height:110px;
     width:-webkit-fill-available;
     margin-left:15rem;
 }
-.softwareItemstext{
+.videogamesItemstext{
     margin-top:15px;
     line-height: 1!important;
 }

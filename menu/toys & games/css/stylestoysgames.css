@@ -1,7 +1,7 @@
-/*Software*/
+/*ToysGames*/
 /*SearchBox*/
 .all{
-    width:5rem;
+    width:6.3rem;
 }
 /*SearchBox Final*/
 /*Media Query Header*/
@@ -43,18 +43,24 @@
     margin-right: auto;  
     margin-bottom: 7rem;  
 }
-.software-boxleft{
+.toysgames-boxleft{
     margin-bottom: 20px;
     float: left;
     line-height:15px;
-    width: 17%;
+    width: 17%; 
 }
 .boxleft-items{
     padding-right:1rem;
     border-right:1px solid #DDDDDD;
 }
+.spacing-basemax{
+    margin-bottom:2rem !important;
+}
 .spacing-base{
     margin-bottom: 14px !important;
+}
+.spacing-basesmall{
+    margin-bottom: 6px !important;
 }
 .title-gray-left{
     color:#969696;
@@ -68,6 +74,9 @@
     font-weight: 700!important;
     line-height: 1.5!important;
     color: #111!important;
+}
+.nomargin{
+    margin-bottom:0rem;
 }
 .list-item-left{
     margin-left: 10px;
@@ -105,8 +114,7 @@
 h1 {
     font-weight: 400 !important;
     font-size: 28px !important;
-    line-height: 1.2 !important;
-    padding-bottom: 4px;
+    line-height: 0.8 !important;
 }
 .principal-boxrightitems{
     width:80% !important;
@@ -141,7 +149,7 @@ h1 {
     color: #111!important;
     text-align:center;
     margin-bottom:12px;
-    font-weight: 400!important;
+    font-weight: 450!important;
     font-style: normal!important;
     text-transform: none!important;
     text-decoration: none!important;
@@ -150,35 +158,14 @@ h1 {
 }
 .category-imageitem{
     width:210px;
-    height:160px;
+    height:175px;
     box-sizing:border-box;
     background-size: cover;
 }
-.col-xl-12{
-    margin-top:1rem !important;
-}
-.td-softwareitem{
-    border-bottom:1px solid #DDDDDD;
-    width:-webkit-fill-available;
-    box-sizing: border-box;
-}
-.box-softwareitems{
-    width:95%;
-    margin-left:auto;
-    margin-right:auto;
-    background-size: cover;
-    margin-bottom:9rem;
-    
-}
-.boxleft-softwareItems{
-    float: left;
-    width: 25%;
-    margin-left:1rem;
-    margin-right:1rem;
-}
-.software-imageitem{
-    height:210px;
-    width:190px;
+.toysgames-imageitem{
+    height:180px;
+    width:180px;
+    background-repeat: no-repeat !important;
 }
 .eligible{
     font-size: 13px;
@@ -193,13 +180,11 @@ h1 {
     color:#CD7029 !important;
     text-decoration: none !important;
 }
-.softwareContenido{
+.toysgamesContenido{
     line-height: 2!important;
     height:110px;
-    width:-webkit-fill-available;
-    margin-left:15rem;
 }
-.softwareItemstext{
+.toysgamesItemstext{
     margin-top:15px;
     line-height: 1!important;
 }
@@ -214,4 +199,8 @@ h1 {
 .number{
     font-size: 20px;
     font-weight: 500;
+}
+.td-toysgamesitem{
+    border-bottom:1px solid #DDDDDD;
+    margin-bottom:2.5rem;
 }

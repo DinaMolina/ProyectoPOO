@@ -47,9 +47,10 @@
     margin-bottom: 20px;
     float: left;
     line-height:15px;
-    width: 18%;
+    width: 17%;
 }
 .boxleft-items{
+    padding-right:1rem;
     border-right:1px solid #DDDDDD;
 }
 .spacing-base{
@@ -107,10 +108,10 @@ h1 {
     line-height: 1.2 !important;
     padding-bottom: 4px;
 }
-#principal-boxrightitems{
+.principal-boxrightitems{
     width:80% !important;
 }
-#principal-boxrightitems p{
+.principal-boxrightitems p{
     font-size: 13px;
     line-height: 19px;
     color: #111;
