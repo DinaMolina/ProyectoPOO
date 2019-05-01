@@ -50,6 +50,8 @@
                 return $this;
         }
         public function agregarProducto(){}
-        public function listarCarrito(){}        
+        public function listarProductos(){
+                return file_get_contents("../data/carrito.json");
+        }        
      }
 ?>

@@ -21,6 +21,15 @@ var idiomas=[
     {idioma:''},{idioma:'English'},{idioma:'Español'},{idioma:'Portugues'},{idioma:'简体中文'},{idioma:'Deutsch - DE'},{idioma:'繁體中文 - ZH'},
 ];
 
+var productos=[{titulo:'Iggy Peck, Architec', imagen:'img7/4.jpg', precio:'15.50'  },{titulo:'School Zone - Preschool Basics Workbook, 64 Pages, Ages 3 to 5, Colors, Numbers, Counting, Matching, Classifying, Beginning Sounds, and More (School Zone Basics Workbook Series', imagen:'img7/5.jpg', precio:'15.50'  },
+{titulo:'Origami Paper 500 sheets Kaleidoscope Patterns 6" (15 cm): Tuttle Origami Paper: High-Quality Origami Sheets Printed with 12 Different Designs: Instructions for 8 Projects Included', imagen:'img7/6.jpg', precio:'15.50'  },{titulo:'Rock Art Handbook: Techniques and Projects for Painting, Coloring, and Transforming Stones (Fox Chapel Publishing) Over 30 Step-by-Step Tutorials using Paints, Chalk, Art Pens, Glitter Glue & More', imagen:'img7/7.jpg', precio:'15.50'  },
+{titulo:'Vogue® Knitting The Ultimate Knitting Book: Completely Revised & Updated', imagen:'img7/8.jpg', precio:'15.50'  },{titulo:"Carol Doak's Foundation Paper", imagen:'img7/9.jpg', precio:'15.50'  },
+{titulo:'My First Origami Kit: [Origami Kit with Book, 60 Papers, 150 Stickers, 20 Projects]', imagen:'img7/10.jpg', precio:'15.50'  },{titulo:'Sewing School ®: 21 Sewing Projects Kids Will Love to Make', imagen:'img7/11.jpg', precio:'15.50'  },
+{titulo:'Moda All-Stars - On a Roll: 14 Quilts That Start with 2 1/2" Strips', imagen:'img7/12.jpg', precio:'15.50'  },{titulo:'', imagen:'img7/13.jpg', precio:'15.50'  },
+{titulo:'Friendship Bracelets 101: Fun to Make, Fun to Wear, Fun to Share (Can Do Crafts) (Design Originals) Step-by-Step Instructions; Colorful Knotted Bracelets Made with Embroidery Floss for Kids & Teens', imagen:'img7/14.jpg', precio:'15.50'  },{titulo:'Bob Ross Bobblehead: With Sound! (Miniature Editions)', imagen:'img7/15.jpg', precio:'15.50'  },
+{titulo:'Mandalas II Adult Coloring Book - Features 50 Original Hand Drawn Designs Printed on Artist Quality Paper with Hardback Covers, Top Spiral Binding, Perforated Pages, and Bonus Blotter by ColorIt', imagen:'img7/16.jpg', precio:'15.50'  }
+];
+
 function menu(){
     $('#menu').empty();
     for(var i=0; i<departamentos.length; i++){
@@ -53,6 +62,7 @@ function desplegaridiomas(){
        </option>` );
     }
 }
+
 
 
 
