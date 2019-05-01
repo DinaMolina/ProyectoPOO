@@ -6,6 +6,21 @@
         private $imagen;
         private $descripcion;
         private $codigoProducto;
+
+        public function __construct($nombreProducto,
+        $precio,
+        $departamento,
+        $imagen,
+        $descripcion,
+        $codigoProducto){
+                $this->nombreProducto=$nombreProducto;
+                $this->precio=$precio;
+                $this->departamento=$departamento;
+                $this->imagen=$imagen;
+                $this->descripcion=$descripcion;
+                $this->codigoProducto=$codigoProducto;
+
+        }
               
 
         /**
@@ -123,7 +138,7 @@
                 return $this;
         }
 
-        public function obtenerProductos(){
+        public static function obtenerProductos(){
                 return file_get_contents("./data/producto.json");
         }
     }    

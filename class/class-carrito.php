@@ -3,6 +3,12 @@
         private $producto;
         private $cantidad;
         
+        public function __construct($producto,
+        $cantidad){
+                $this->cantidad=$cantidad;
+                $this->producto=$producto;
+
+        }
 
         /**
          * Get the value of producto
@@ -43,6 +49,6 @@
 
                 return $this;
         }
-        public function listar(){}
+        public function agregarProducto(){}
      }
 ?>
