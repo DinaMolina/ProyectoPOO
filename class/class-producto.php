@@ -5,6 +5,7 @@
         private $departamento;
         private $imagen;
         private $descripcion;
+        private $codigoProducto;
               
 
         /**
@@ -101,5 +102,29 @@
         
         public function agregarCarrito(){}
 
+
+        /**
+         * Get the value of codigoProducto
+         */ 
+        public function getCodigoProducto()
+        {
+                return $this->codigoProducto;
+        }
+
+        /**
+         * Set the value of codigoProducto
+         *
+         * @return  self
+         */ 
+        public function setCodigoProducto($codigoProducto)
+        {
+                $this->codigoProducto = $codigoProducto;
+
+                return $this;
+        }
+
+        public function obtenerProductos(){
+                return file_get_contents("./data/producto.json");
+        }
     }    
 ?>
