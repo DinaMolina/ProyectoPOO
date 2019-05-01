@@ -44,8 +44,12 @@ $this->producto = $producto;
 return $this;
 }
 
-public function listar(){}
-public function agregarProducto(){}    
+public function listar(){
+    
+}
+public function agregarProducto(){
+
+}    
 }
 
 

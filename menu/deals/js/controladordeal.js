@@ -23,12 +23,12 @@ var buyitems=[
     {departamento:"Deals",categoria:"Principal",imagen:"img/HamiltonBeachMixer.jpg",dealoftheday:false,precio:"$139.99",discount:"",producto:"Hamilton Beach Stand Mixer",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/OneTouch.jpg",dealoftheday:false,precio:"$31.97",discount:"",producto:"iOttie Easy One Touch Wireless Qi Fast Charge Car Mount Kit",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/Whitesheets.jpg",dealoftheday:false,precio:"$28.04",discount:"",producto:"CGK Unlimited Twin XL Sheet Set - 3 Piece - Fits College Dorm Rooms - Hotel Luxury Bed Sheets",boton:"Add to Cart"},
+    {departamento:"Deals",categoria:"Principal",imagen:"img/Retainercleaner.jpg",dealoftheday:false,precio:"$18.20",discount:"",producto:"Premium Denture Cleaner",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/AuxiwaClip.jpg",dealoftheday:false,precio:"$11.89",discount:"Previous Price: $19.99 (41% off)",producto:"Auxiwa Clip on Selfie Ring Light [Rechargeable Battery] with 36 LED for Smart Phone Camera Round Shape, White",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/Starbucksbreakfast.jpg",dealoftheday:false,precio:"$35.64",discount:"Previous Price:  $44.96 (21% off)",producto:"Starbucks Breakfast Blend Medium Roast Single Cup Coffee for Keurig Brewers, 6 Boxes of 10 (60 Total K-Cup pods)",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/Toysteaset.jpg",dealoftheday:false,precio:"$13.27",discount:"Previous Price:  $27.99 (53% off)",producto:"Green Toys Tea Set - BPA Free, Phthalates Free Play Toys for Gross Motor, Fine Skills Development. Kitchen Toys",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/Dashcam.jpg",dealoftheday:false,precio:"$39.97",discount:"Previous Price:  $49.99 (20% off)",producto:"APEMAN Dash Cam 1080P Full HD Mini Car Driving Recorder 170° Wide Angle, Motion Detection, G-Sensor, Loop Recording, Night Vision",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/Flatsandals.jpg",dealoftheday:false,precio:"$7.76",discount:"",producto:"FUNKYMONKEY Women's Comfort Slides Double Buckle Adjustable EVA Flat Sandals",boton:"Add to Cart"},
-    {departamento:"Deals",categoria:"Principal",imagen:"img/Retainercleaner.jpg",dealoftheday:false,precio:"$18.20",discount:"",producto:"Premium Denture Cleaner",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/Carphonemount.jpg",dealoftheday:false,precio:"$8.49",discount:"",producto:"Lamicall Car Phone Mount",boton:"Add to Cart"}
 ]
 
