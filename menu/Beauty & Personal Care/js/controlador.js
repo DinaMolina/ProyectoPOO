@@ -24,14 +24,13 @@ var idiomas=[
 function menu(){
     $('#menu').empty();
     for(var i=0; i<departamentos.length; i++){
-       $('#menu').append(`<option value=${i}>
-       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       $('#menu').append(`
+       <a class="dropdown-item" href="menu/${departamentos[i].area}/${departamentos[i].area}.html">
          ${departamentos[i].area}
-       </a>
-   </option>`);
+       </a><br>
+        `);
     }
 }
-
 
 function desplegarLista1(){
     $('#lista').empty();

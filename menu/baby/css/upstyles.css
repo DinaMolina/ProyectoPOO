@@ -38,7 +38,7 @@
 .dropdown{
     margin-left: 95px;
 }
-#menu{
+.menu{
     font-weight: bold;
     font-size: 14px;
     font-family: arial,sans-serif;
@@ -47,7 +47,7 @@
     line-height: 15px;
     background-color: #233040;
     color: white;
-    width: 7rem;
+    width: 9rem;
     border-color: #233040;
     margin-left: 103px;
 }

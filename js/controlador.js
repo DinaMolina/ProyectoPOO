@@ -13,7 +13,7 @@ var postales= [
 ];
 
 var departamentos=[    
-    {area:'Departments'},{area:'Prime Video'},{area:'Music, CDs & Vinyl'},{area:'Digital Musical' },{area:'Kindle Store' },{area:'Arts & Crafts' },{area:'Automotive' },{area:'Baby' },
+    {area:'Prime Video'},{area:'Music, CDs & Vinyl'},{area:'Digital Musical' },{area:'Kindle Store' },{area:'Arts & Crafts' },{area:'Automotive' },{area:'Baby' },
     {area:'Beauty & Personal Care' },{area:'Book' },{area:'Computers' },{area:'Electronics' },{area:"Women's Fashion" },{area:"Men's Fashion" },{area:'Health & Household' },
     {area:'Home and kitchen' },{area:'Industrys & Scientific' },{area:'Luggage' },{area:'Movies & Televisor' },{area:'Pet Supplies' },{area:'Software' },{area:'Sports & Outdoors' },
     {area:'Tools & Home Improvement' },{area:'Toys & Games' },{area:'Video Games' },{area:'Deals' },
