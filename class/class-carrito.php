@@ -50,5 +50,6 @@
                 return $this;
         }
         public function agregarProducto(){}
+        public function listarCarrito(){}        
      }
 ?>
