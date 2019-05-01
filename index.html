@@ -43,8 +43,14 @@
       </li>
       <li class="nav-item letters">
         <!--Menú de los departamentos-->
-        <select id="menu">
-        </select>
+        <div class="dropdown menu">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Departaments
+            </a>
+          
+            <div class="dropdown-menu" id="menu" aria-labelledby="dropdownMenuLink">
+            </div>
+          </div>
       </li>
       <li class="nav-item ">
         <a class="button" href="anchors.html">Your Amazon.com</a>
@@ -850,10 +856,11 @@
     </div>
   </footer>
 
-
+  <script src="js/popper.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/controlador.js?v=<?php echo time(); ?>"></script>
+ 
 
 </body>
 
