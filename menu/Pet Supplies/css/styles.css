@@ -26,6 +26,8 @@
     border-color: #FE7A4A;
     background-repeat: no-repeat;
     background-position: right;
+    margin-left: 50px;
+    margin-top: -38px;
 }
 .button{
     background-color: #232F3E;
@@ -39,7 +41,7 @@
 .dropdown{
     margin-left: 95px;
 }
-#menu{
+.menu{
     font-weight: bold;
     font-size: 14px;
     font-family: arial,sans-serif;
@@ -48,7 +50,7 @@
     line-height: 15px;
     background-color: #233040;
     color: white;
-    width: 7rem;
+    width: 9rem;
     border-color: #233040;
     margin-left: 103px;
 }
@@ -67,7 +69,10 @@
 .col-xl-3{
     max-width:-webkit-fill-available; 
 }
-
+#carrito{
+    width: 50px;
+    height: 0px;
+}
 .cursor{
     color: #C2C3C4;
     text-decoration: none;

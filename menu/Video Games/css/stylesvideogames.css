@@ -3,6 +3,14 @@
 .all{
     width:6rem;
 }
+.search-box{
+    margin-top:0 !important;
+    margin-left:0 !important;
+}
+#barraopciones{
+    background-color: #232F3E !important;
+    height:3.5rem;
+}
 /*SearchBox Final*/
 /*Media Query Header*/
 @media only screen and (max-width: 1335px){

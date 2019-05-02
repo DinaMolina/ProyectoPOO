@@ -40,10 +40,16 @@
         <img src="../imgcomunes/lugar.png" style="width: 97px;
     height: 32px;">
       </li>
-      <li class="nav-item letters">
-        <!--Menú de los departamentos-->
-        <select id="menu">
-        </select>
+      <!--Menú de los departamentos-->
+      <li class="nav-item ">
+        <div class="dropdown menu" style="margin-left:32px;" >
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Departaments
+            </a>
+          
+            <div class="dropdown-menu" id="menu" aria-labelledby="dropdownMenuLink">
+            </div>
+          </div>
       </li>
       <li class="nav-item ">
         <a class="button" href="anchors.html">Your Amazon.com</a>
@@ -515,10 +521,11 @@
           </div>
         </div>
       </footer>
-            
+       
+      <script src="js/popper.min.js"></script>
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
-      <script src="js/controlador.js?v=<?php echo time(); ?>"></script>
+      <script src="../../js/controlador.js"></script>
       <script src="js/controladortoysgames.js"></script>
     </body>
     
