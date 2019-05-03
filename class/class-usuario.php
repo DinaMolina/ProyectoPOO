@@ -182,7 +182,7 @@
             }
             
             public function guardar(){
-                $archivo = fopen('../../data/usuarios.json','a+'); 
+                $archivo = fopen('../data/usuarios.json','a+'); 
                 fwrite($archivo,$this->__toString()."\n"); 
                 fclose($archivo);
                 return $this->__toString();
