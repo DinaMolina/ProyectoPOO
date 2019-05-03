@@ -2,7 +2,7 @@
     include("../class/class-usuario.php");
     switch($_GET["accion"]){
         case "guardar":
-            $Usuario = new usuario(
+            $Usuario = new Usuario(
                 null,
                 $_POST["nombre"],
                 $_POST["correo"],
