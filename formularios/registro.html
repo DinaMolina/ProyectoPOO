@@ -4,7 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Amazon Sign In</title>
-        <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
@@ -14,19 +14,24 @@
         <div id="registro">
             <h1>Create account</h1>
             <h5>Your name</h6>
-            <input class="caja-texto" >
+            <input id="nombre" class="caja-texto" >
             <h5>Email</h6>
-            <input class="caja-texto" type="email" >
+            <input id="correo" class="caja-texto" type="email" >
             <h5> Password</h5>
-            <input class="caja-texto" type="password" placeholder="At least 6 characters">
+            <input id="contraseña" class="caja-texto" type="password" placeholder="At least 6 characters">
             <h6>¡ Passwords must be at least 6 characters.</h6>
             <h5> Re-enter password</h5>
-            <input class="caja-texto" type="password">
-            <input type="button" value="Create your Amazon Account">         
+            <input id="Recontraseña" class="caja-texto" type="password">
+            <button id="btn-guardar" type="button">Create your Amazon Account</button>
+            
             <p>By creatin an account, you agree to Amazo's<br>
                 <a href="www.google.com">Conditions of Use </a>and <a href="">Privacy Notice</a>.
             </p>
             <p>Already have an account? <a href="login.html">Sing in</a></p>
         </div>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="js/controlador.js"></script>
     </body>
 </Html>
