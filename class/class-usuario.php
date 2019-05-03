@@ -151,7 +151,7 @@
             }
 
             public function agregarUsuario(){
-                $Usuarios = json_decode(file_get_contents("../data/Usuarios.json"),true);
+                $Usuarios = json_decode(file_get_contents("../data/usuarios.json"),true);
                         
                 $u["nombre"]=$this->nombre;
                 $u["contrasena"]=$this->contrasena;
@@ -165,7 +165,7 @@
             
                 
                 $Usuarios[] = $u;
-                $archivo = fopen("../data/Usuarios.json","w");
+                $archivo = fopen("../data/usuarios.json","w");
                 fwrite($archivo, json_encode($Usuarios));
             }
             
