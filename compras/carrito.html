@@ -6,6 +6,8 @@
     <title>Shopping cart</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estiloscarrito.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -23,29 +25,29 @@
               <select class="all">
                   <option>All</option>
                 </select>
-            <input class="search-box form-control mr-sm-2 " type="search" aria-label="Search" style="background-image:url(../imgcomunes/lupa.png);">
+            <input class="search-box form-control mr-sm-2 " type="search" aria-label="Search" style="background-image:url(../img/lupa.png);">
           </form>
         </div>
         <a class="navbar-brand" href="#"><img  src="../img/logo.png" alt="LogoAmazon" > 
         </a>
       </nav>
 <!--Barra de opciones-->
-     <div >
+     <div id="barraopciones">
         <ul class="nav">
             <li class="nav-item ">
               <img src="../img/lugar.png">
             </li>
       <!--Menú de los departamentos-->
-      <li class="nav-item ">
-          <div class="dropdown menu">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Departaments
-              </a>
-            
-              <div class="dropdown-menu" id="menu" aria-labelledby="dropdownMenuLink">
-              </div>
-            </div>
-        </li>
+            <li class="nav-item ">
+              <div class="dropdown menu" style="margin-left:40px;">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Departaments
+                  </a>
+                
+                  <div class="dropdown-menu" id="menu" aria-labelledby="dropdownMenuLink">
+                  </div>
+                </div>
+            </li>
             <li class="nav-item ">
               <a  class="button" href="anchors.html">Your Amazon.com</a>
             </li>
@@ -85,22 +87,56 @@
           </ul>
      </div>
      <hr>
-     <h6 style="margin-left: 850px;">Price</h6>
-     <h6 style="margin-left: 1007px; margin-top: -28px;">Quantity</h6>
-     <h3>Shooping cart</h3>
+     <h3 style="margin-left:2rem">Shooping cart</h3>
      <hr>
-     <div id="productoCarrito">
-     </div>
-
-
-
-
-
-
-
+     <div class="row" id="boxitem">
+          <div id="div-img" class="col-lg-6" style="padding: 1rem 4rem;">
+                <img src="..." class="card-img" alt="...">        
+          </div>
+          <div class="col-lg-4">
+              <div class="card mb-4" style="max-width: 540px;">
+                          <div class="row no-gutters">
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <h6 style="margin-left:1.5rem">Price:<span class="price"></span></h6>
+                          <h6 style="margin-left:1.5rem">Quantity:<span class="price"></span></h6>
+              </div>
+              <div id="div-btn-carrito">
+                <button id="btn-agregarcarrito" class="btn-carrito" type="button" >
+                  <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Add to Cart</button>
+              </div>
+              <div>
+                    <button class="btn-lista" type="button" data-toggle="modal" data-target="#exampleModal" >Add to List</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Add to List</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+              </div>
+          </div>
+    </div>
+    <hr>
      <footer>
         <div class="navfooter">
-          <div class="backtop"><a href="index.html">Back to top</a></div>
+          <div class="backtop"><a href="carrito.html">Back to top</a></div>
           <div class="container">
             <div class="row navfooterrowbox">
               <div class="col-lg-3 col-md-6 col-12 navfooterboxlist">
@@ -204,7 +240,7 @@
           </div>
           <div class="bottom-amazon-language-us">
             <div class="row">
-              <div><img id="bottom-logo" src="img/logo-amazon.png" alt="logo-amazon"></div>
+              <div><img id="bottom-logo" src="../img/logo-amazon.png" alt="logo-amazon"></div>
               <form id="form-search-buttons" class="form-inline">
                 <div class="col-lg-4 col-md-12 col-12">
                   <div id="bottom-language"><button type="button">English</button></div>
@@ -388,10 +424,10 @@
         </div>
       </footer>
     
-      <script src="js/popper.min.js"></script>
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/controlador_carrito.js"></script>
+      <script src="../js/popper.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/controlador.js"></script>
     
     </body>
     
