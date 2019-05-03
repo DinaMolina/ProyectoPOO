@@ -1,3 +1,7 @@
 [
-    
+        {"codigoProducto":1,"nombreProducto":"Iggy Peck, Architec","imagen":"img7/4.jpg","precio":"$15.50","departamento":"artAndCrafts","descripcion":" Lorem ipsum dolor sit amet."  },
+        {"codigoProducto":2,"nombreProducto":"School Zone - Preschool Basics Workbook, 64 Pages, Ages 3 to 5, Colors, Numbers, Counting, Matching, Classifying, Beginning Sounds, and More (School Zone Basics Workbook Series", "imagen":"menu/Arts & Crafts/img7/5.jpg", "precio":"$15.50", "departamento":"artAndCrafts", "descripcion":" Lorem ipsum dolor sit amet." },
+        {"codigoProducto":3,"nombreProducto":"Origami Paper 500 sheets Kaleidoscope Patterns 6 (15 cm): Tuttle Origami Paper: High-Quality Origami Sheets Printed with 12 Different Designs: Instructions for 8 Projects Included", "imagen":"menu/Arts & Crafts/img7/6.jpg", "precio":"$15.50", "departamento":"artAndCrafts" , "descripcion":" Lorem ipsum dolor sit amet."},
+        {"codigoProducto":4,"nombreProducto":"Rock Art Handbook: Techniques and Projects for Painting, Coloring, and Transforming Stones (Fox Chapel Publishing) Over 30 Step-by-Step Tutorials using Paints, Chalk, Art Pens, Glitter Glue & More", "imagen":"menu/Arts & Crafts/img7/7.jpg", "precio":"$15.50" , "departamento":"artAndCrafts", "descripcion":" Lorem ipsum dolor sit amet." },
+        {"codigoProducto":5,"nombreProducto":"Vogue® Knitting The Ultimate Knitting Book: Completely Revised & Updated", "imagen":"menu/Arts & Crafts/img7/8.jpg", "precio":"$15.50", "departamento":"artAndCrafts", "descripcion":" Lorem ipsum dolor sit amet." }
 ]
