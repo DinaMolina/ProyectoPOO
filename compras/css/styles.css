@@ -116,6 +116,7 @@
     width: fit-content;
 }
 
+<<<<<<< HEAD
 .precio{
     margin-left: 850px;
     margin-top: -60px;
@@ -127,12 +128,175 @@
     width: 50px;
     background-color: white !important;
     color: black;
+=======
+/*Electronics-Toys*/
+#div-electronics-toys{
+    background-color: white;
+    width: 95%;
+    background-size: cover;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 6rem 10px 6rem;
+}
+.ad-image{
+    height: 200px;
+    width: 440px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#electronics{
+    background-image: url(img/electronics.png);
+}
+
+#toys{
+    background-image: url(img/toys.png);   
+}
+
+/*carousels*/
+.shop{
+    background-color: white;
+    width: 95%;
+    background-size: cover;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.6rem 0rem 2rem 1rem;
+}
+
+/*.htext{
+    height:40px;
+}*/
+
+h1{
+    color: #111 !important;
+    font-size: 24px !important;
+    font-weight:bold !important;
+}
+
+.anchor{
+    font-size:17px !important;
+    color:#287ECA !important;
+}
+
+.imagebottom-carousel1{
+    height:200px;
+    width:145px;
+}
+.imagebottom-carousel2{
+    height:200px;
+    width:155px;
+}
+.imagebottom-carousel3{
+    height:200px;
+    width:165px;
+}
+.imagebottom-carousel4{
+    height:200px;
+    width:170px;
+}
+.imagebottom-carousel5{
+    height:200px;
+    width:190px;
+}
+.imagebottom-carousel6{
+    height:200px;
+    width:200px;
+}
+.imagebottom-carouselxl{
+    height:200px;
+    width:220px;
+}
+.imagebottom-carousel7{
+    height:170px;
+    width:160px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.imagebottom-carousel8{
+    height:180px;
+    width:180px;
+    margin-top:1rem;
+}
+.imagebottom-carousel9{
+    height:80px;
+    width:170px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.carousel-indicators{
+    height:5px;
+    padding-top:5px;
+
+}
+.carousel-indicators li{
+    width: 240px !important;
+    height: 4px !important;
+    /*background-color: rgba(128, 128, 128, 0.432) !important; */
+}
+
+.upperrecommendations{
+    height:60px;
+    width:100%;
+    position:relative;
+    background-color: white;
+    background-size: cover;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.6rem 0rem 1rem 0rem;
+}
+.upperrecommendations hr{
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+.recommendations{
+    width:100%;
+    position:relative;
+    background-color: white;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem 3rem 1rem;
+>>>>>>> bcc7588c578d238fc2c05e6bc801b5fe3fc8fb3e
 }
 .card-title{
     margin-bottom: 0px;
 }
 
 
+.text-center h1{
+    color: #444 !important;
+    font-size: 22px !important;
+    font-weight:400 !important;
+}
+.bottom-sign-button{
+    text-align: center!important;
+    height: 40px;
+    padding-top: 5px;
+}
+.bottom-sign-button button{
+    color:#111;
+    border: 0;
+    border-radius:3px;
+    font-size: 13px;
+    line-height: 29px;
+    margin: 0;
+    padding: 0 10px 0 11px;
+    text-align: center;
+    background: #f0c966;
+    border-color: #a88734 #9c7e31 #846a29;;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none!important;
+    vertical-align: middle;
+}
+.bottom-sign-button button:hover{
+    background: #f7c64b;
+    border-color: #a88734 #9c7e31 #846a29;  
+}
 .navfooter{
     width:100%;
     background-color:#232F3E !important;
