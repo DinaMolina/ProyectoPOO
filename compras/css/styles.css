@@ -40,7 +40,7 @@
 .dropdown{
     margin-left: 95px;
 }
-#menu{
+.menu{
     font-weight: bold;
     font-size: 14px;
     font-family: arial,sans-serif;
@@ -100,18 +100,8 @@
     width: 50px;
     height: 0px;
 }
-.sign{
-    width: 15rem;
-    border-radius: 3px;
-    font-size: 13px;
-    height: 2rem;
-    background-color: #F1C558;
-}
-.titulos{
-    font-weight: 645;
-    font-size: 21px;
-    font-family: "Amazon Ember",Arial,sans-serif;
-}
+
+
 .all{
     height: 2.3rem;
     font-size: 12px;
@@ -135,7 +125,13 @@
     margin-top: -58px;
     height: 27px;
     width: 50px;
+    background-color: white !important;
+    color: black;
 }
+.card-title{
+    margin-bottom: 0px;
+}
+
 
 .navfooter{
     width:100%;
@@ -305,6 +301,18 @@ a:hover {
     border-width: 5px;
 }
 
-
-
-
+.zona-botones{
+    margin-left: 900px;
+    margin-top: -205px;
+}
+#btn-agregar-carrito{
+    background-color:  #F0C14C;
+}
+.btn-buy{
+    background-color:  #F0C14C;
+    color: black;
+}
+#btn-agregar-lista{
+    border-bottom-color: black;
+    background-color: white;
+}

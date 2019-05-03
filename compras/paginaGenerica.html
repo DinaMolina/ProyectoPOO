@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping </title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+</head>
+<body style="font-family:Amazon Ember,Arial,sans-serif;"> 
+    <nav class="navbar navbar-expand-lg bg-light">
+        <a class="navbar-brand" href="#"><img id="logo" src="../img/logo.png" alt="LogoAmazon" > 
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      <!--Barra de search-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+          <form class="form-inline my-2 my-lg-0 ">
+              <select class="all">
+                  <option>All</option>
+                </select>
+            <input class="search-box form-control mr-sm-2 " type="search" aria-label="Search" style="background-image:url(../img/lupa.png);">
+          </form>
+        </div>
+        <a class="navbar-brand" href="#"><img  src="../img/esquina.png" alt="LogoAmazon" > 
+        </a>
+      </nav>
+<!--Barra de opciones-->
+     <div >
+        <ul class="nav">
+            <li class="nav-item ">
+              <img src="../img/lugar.png">
+            </li>
+      <!--Menú de los departamentos-->
+      <li class="nav-item ">
+          <div class="dropdown menu">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Departaments
+              </a>
+            
+              <div class="dropdown-menu" id="menu" aria-labelledby="dropdownMenuLink">
+              </div>
+            </div>
+        </li>
+            <li class="nav-item ">
+              <a  class="button" href="anchors.html">Your Amazon.com</a>
+            </li>
+            <li class="nav-item">
+                <a href="anchors.html" class="button">Today's Deals</a>
+            </li> 
+            <a  class="button downbutton" href="anchors.html"  >Gift Cards</a>
+          </li>
+          <li class="nav-item "> 
+            <a  class="button" href="anchors.html">Registry</a>
+          </li>
+            </li>  
+             <a class="button downbutton" href="anchors.html">Sell</a>
+           </li>
+            </li>   
+              <a  class="button downbutton"href="anchors.html">Help
+
+              </a>
+            </li>
+            <li class="nav-item letters" >
+            <li>
+                <select id="idioma" class="en" style="background-image: url(../img/en.png);" > 
+                </select>         
+            </li> 
+            <li>
+            <select id="lista" class="cuadro" style="background-image: url(../img/lista.png);" > 
+            </select>      
+            </li>
+            <li>
+              <a href="#"><img style="margin-left: 17px; margin-top: -3px;" src="../img/orden.png" alt="LogoAmazon" > 
+              </a>
+            </li>
+            <li>
+                <button type="button" id="carrito" ><img style="margin-top: -5px; margin-left: -9px;" src="../img/carrito.png" alt="LogoAmazon" > 
+                </button>        
+            </li>
+          </ul>
+     </div>
+     <hr>
+<!--Producto-->
+     <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img id="imagen" src="..." class="card-img" alt="..." >
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title" id="nombreProducto">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted" id="precio">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card zona-botones" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">In Stock</h5>
+        <p class="card-text">Ships from and sold by Amazon.com.</p>
+        <button type="button" id="btn-agregar-carrito" class="btn btn-warning">Add to cart</button><br><br>
+        <a href="#" class="btn btn-primary btn-buy">Buy now</a><br><br>
+        <button type="button" id="btn-agregar-lista" class="btn btn-warning">Add to list</button>
+      </div>
+    </div>
+     
+
+    
+      <script src="js/popper.min.js"></script>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/controlador_carrito.js"></script>
+    
+    </body>
+    
+    </html>

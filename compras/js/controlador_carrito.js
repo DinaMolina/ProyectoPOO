@@ -4,7 +4,7 @@ $(document).ready(function(){
     desplegarLista1();
     desplegaridiomas();
     listarProductos();
-
+    guardar();
 });
 
 var postales= [
@@ -14,7 +14,7 @@ var postales= [
 ];
 
 var departamentos=[    
-    {area:'Prime Video'},{area:'Music, CDs & Vinyl'},{area:'Digital Musical' },{area:'Kindle Store' },{area:'Arts & Crafts' },{area:'Automotive' },{area:'Baby' },
+    {area:'Music, CDs & Vinyl'},{area:'Kindle Store' },{area:'Arts & Crafts' },{area:'Automotive' },{area:'Baby' },
     {area:'Beauty & Personal Care' },{area:'Book' },{area:'Computers' },{area:'Electronics' },{area:"Women's Fashion" },{area:"Men's Fashion" },{area:'Health & Household' },
     {area:'Home and kitchen' },{area:'Industrys & Scientific' },{area:'Luggage' },{area:'Movies & Televisor' },{area:'Pet Supplies' },{area:'Software' },{area:'Sports & Outdoors' },
     {area:'Tools & Home Improvement' },{area:'Toys & Games' },{area:'Video Games' },{area:'Deals' },
@@ -54,7 +54,7 @@ function menu(){
     $('#menu').empty();
     for(var i=0; i<departamentos.length; i++){
        $('#menu').append(`
-       <a class="dropdown-item" href="menu/${departamentos[i].area}/${departamentos[i].area}.html">
+       <a class="dropdown-item" href="../menu/${departamentos[i].area}/${departamentos[i].area}.html">
          ${departamentos[i].area}
        </a><br>
         `);
@@ -92,27 +92,93 @@ function listarProductos(){
       console.log(res);
       cant=1;
 			for(var i=0;i<res.length;i++){
-				$("#productos").append(`<div class="card mb-3">
+				$("#productoCarrito").append(`<div class="card mb-3">
               <div class="row no-gutters">
                 <div class="col-md-4">
                   <img src="${res[i].imagen}" class="card-img" alt="...">
                 </div>
                 <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">${res[i].nombreProducto}</h5>
+                  <div class="card-body" style="width: 190px;">
+                    <a href="#" class="card-title">${res[i].nombreProducto}</a>
                   </div>
               </div>
-              <p class="precio">${res[i].precio}</p>
-              <select class="cantidad"> 
-                  <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
-                  </select> 
-            </div>   
-        </div> 
+              <p class="precio">${res[i].precio}</p> 
+                     <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle cantidad" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                          <button class="dropdown-item" type="button">4</button>
+                          <button class="dropdown-item" type="button">5</button>
+                          <button class="dropdown-item" type="button">6</button>
+                          <button class="dropdown-item" type="button">7</button>
+                          <button class="dropdown-item" type="button">8</button>
+                        </div>
+                      </div>
+
+                  </div>   
+              </div> 
         `);
-			}
+      }
 		},
 		error:function(error){
 			console.error(error);
 		}
+	});
+}
+
+
+
+
+function guardar(){
+	$('#btn-agregar-carrito').click(function(){
+    console.log('Ejecutar peticion asincrona');
+		var parametros = 'nombreProducto='+document.getElementById("nombreProducto").innerText + "&"+'precio='+document.getElementById("precio").innerText+"&"+'imagen='+document.getElementById("imagen").getAttribute("src")
+		console.log("Esto se enviará al servidor: "+parametros);
+	
+		$.ajax({
+				url:"../ajax/carrito.php?accion=guardar",
+				method:"POST",
+				data:parametros, 
+				dataType: 'json', 
+				success:function(respuesta){
+						console.log(respuesta);
+						$("#agregado").append(`<div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="${respuesta[i].imagen}" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="width: 190px;">
+                  <a href="#" class="card-title">${respuesta[i].nombreProducto}</a>
+                </div>
+            </div>
+            <p class="precio">${respuesta[i].precio}</p> 
+                   <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle cantidad" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button">1</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5</button>
+                        <button class="dropdown-item" type="button">6</button>
+                        <button class="dropdown-item" type="button">7</button>
+                        <button class="dropdown-item" type="button">8</button>
+                      </div>
+                    </div>
+
+                </div>   
+            </div> 
+						`);
+						 
+				},
+				error:function(error){
+						console.error(error);
+				}
+		});	
 	});
 }
