@@ -25,7 +25,7 @@ function menu(){
     $('#menu').empty();
     for(var i=0; i<departamentos.length; i++){
        $('#menu').append(`
-       <a class="dropdown-item" href="menu/${departamentos[i].area}/${departamentos[i].area}.html">
+       <a class="dropdown-item" href="../${departamentos[i].area}/${departamentos[i].area}.html">
          ${departamentos[i].area}
        </a><br>
         `);
