@@ -69,23 +69,6 @@
                 return $this;
             }
 
-         
-
-            public function agregarUsuario(){
-                $Usuarios = json_decode(file_get_contents("../data/usuarios.json"),true);
-                        
-                $u["nombre"]=$this->nombre;
-                $u["contrasena"]=$this->contrasena;
-                $u["correo"]=$this->correo;            
-                
-                $Usuarios[] = $u;
-                $archivo = fopen("../data/usuarios.json","w");
-                fwrite($archivo, json_encode($Usuarios));
-            }
-            
-            public function agregarFormaDePago($nombreTarjeta, $numeroTarjeta){
-
-            }
 
             public function __toString(){
                 $a["nombre"] = $this->nombre;
