@@ -13,10 +13,10 @@ var postales= [
 ];
 
 var departamentos=[    
-    {area:'Prime Video'},{area:'Music, CDs & Vinyl'},{area:'Digital Musical' },{area:'Kindle Store' },{area:'Arts & Crafts' },{area:'Automotive' },{area:'Baby' },
-    {area:'Beauty & Personal Care' },{area:'Book' },{area:'Computers' },{area:'Electronics' },{area:"Women's Fashion" },{area:"Men's Fashion" },{area:'Health & Household' },
-    {area:'Home and kitchen' },{area:'Industrys & Scientific' },{area:'Luggage' },{area:'Movies & Televisor' },{area:'Pet Supplies' },{area:'Software' },{area:'Sports & Outdoors' },
-    {area:'Tools & Home Improvement' },{area:'Toys & Games' },{area:'Video Games' },{area:'Deals' },
+    {area:'Music, CDs and Vinyl'},{area:'Kindle Store' },{area:'Arts and Crafts' },{area:'Automotive' },{area:'Baby' },
+    {area:'Beauty and Personal Care' },{area:'Book' },{area:'Computers' },{area:'Electronics' },{area:"Women's Fashion" },{area:"Men's Fashion" },{area:'Health and Household' },
+    {area:'Home and kitchen' },{area:'Industrys and Scientific' },{area:'Luggage' },{area:'Movies and Televisor' },{area:'Pet Supplies' },{area:'Software' },{area:'Sports and Outdoors' },
+    {area:'Tools and Home Improvement' },{area:'Toys and Games' },{area:'Video Games' },{area:'Deals' },
 ];
 
 var lista1=[

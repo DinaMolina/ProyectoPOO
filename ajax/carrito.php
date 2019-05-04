@@ -7,12 +7,12 @@
         case 'agregar':
         include("../class/class-producto.php");
         $a = new Producto(
-            $_POST['nombreProducto'],null,
+            $_POST['nombreProducto'],
             $_POST['precio'],null,
             $_POST['imagen'],null,null
          );
         $a->guardar();
-        echo 'ok';
+        echo ok;
         break;
     }
 
