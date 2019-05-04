@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shipping & Payment</title>
+    <link rel="shorcut icon" href="../img/amazon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilosbuynow.css">
+</head>
+<body>
+    <div class="div-top">
+        <div class="div-image">
+        <img class="image-top" src="../img/shippingpayment.gif" alt="ShippingPaymentImg">
+        </div>
+    </div>
+    <div class="a-container">
+            <h1 class="spacing-base">Select a shipping address</h1>
+            <div class="spacing-base">
+                <p>Please enter a shipping address for this order.</p>
+            </div>
+            <hr class="spacing-large">
+            <div class="a-row">
+                <div class="form">
+                    <h2>Enter a new shipping address.</h2>
+                    When finished, click the "Continue" button.
+                    <div id="FullnameContainer" class="a-row spacing-medium">
+                        <label for="Fullname"><b>Full name:&nbsp;</b></label><br>
+                         <input id="nombre" name="Fullname" class="caja-texto" type="text">
+                    </div>
+                    <div id="AddressContainer" class="a-row spacing-medium">
+                            <label for="Address"><b>Address:&nbsp;</b></label><br>
+                             <input id="direccion" name="Address" class="caja-texto" type="text" placeholder="Street Address,company name,apartment,building,floor,etc">
+                    </div>
+                    <div id="CityContainer" class="a-row spacing-medium">
+                            <label for="City"><b>City:&nbsp;</b></label><br>
+                             <input id="ciudad" name="City" class="caja-texto" type="text">
+                    </div>
+                    <div id="RegionContainer" class="a-row spacing-medium">
+                            <label for="Region"><b>State/Province/Region:&nbsp;</b></label><br>
+                             <input id="region" name="Region" class="caja-texto" type="text">
+                    </div>
+                    <div id="ZipContainer" class="a-row spacing-medium">
+                            <label for="Zip"><b>ZIP:&nbsp;</b></label><br>
+                             <input id="codigopostal" name="Zip" class="caja-texto" type="text">
+                    </div>
+                    <div id="CountryContainer" class="a-row spacing-medium">
+                            <label for="Country"><b>Country:&nbsp;</b></label><br>
+                             <select name="Country" id="pais"></select>
+                    </div>
+                    
+                </div>
+            </div>
+        
+    </div>
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/controladorbuynow.js"></script>
+</body>
+</html>

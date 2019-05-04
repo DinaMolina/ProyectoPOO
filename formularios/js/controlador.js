@@ -1,14 +1,12 @@
-$('#btn-guardar').click(function(){
+$("#btn-guardar").click(function(){
         
       if($("#contrasena").val()==$("#recontrasena").val() && $("#correo").val()!="" && $("#nombre").val()!="" && $("#contrasena").val()!=""){
-          
           var parametros = {
             'nombre':$("#nombre").val(),
             'correo':$("#correo").val(),
             "contrasena":$("#contrasena").val()
           };
-          
-          $.ajax({
+            $.ajax({
             url:"../ajax/usuario.php?accion=guardar",
             data:parametros,
             method:"POST",
