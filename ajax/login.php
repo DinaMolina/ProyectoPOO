@@ -8,14 +8,11 @@
             ($_POST["contrasena"])==$registro["contrasena"]
         ){
             $registro["estatus"] = "1";
-            $registro["mensaje"] = "Acceso autorizado";
-            $_SESSION["correo"] = $_POST["correo"];
             echo json_encode($registro);
             exit;
         }
     }
     $registro = array();
     $registro["estatus"] = "0";
-    $registro["mensaje"] = "Acceso no autorizado";
     echo json_encode($registro);
 ?>
