@@ -139,7 +139,7 @@
         }
 
         public static function obtenerProductos(){
-                return file_get_contents("./data/producto.json");
+                return file_get_contents("../data/producto.json");
         }
         public function __toString(){
                 $a["nombreProducto"] = $this->nombreProducto;

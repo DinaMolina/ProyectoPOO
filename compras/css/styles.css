@@ -116,6 +116,7 @@
     width: fit-content;
 }
 
+/*HEAD*/
 .precio{
     margin-left: 850px;
     margin-top: -60px;
@@ -128,6 +129,8 @@
     background-color: white !important;
     color: black;
 }
+
+
 .card-title{
     margin-bottom: 0px;
 }

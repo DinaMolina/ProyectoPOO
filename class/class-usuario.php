@@ -3,31 +3,15 @@
             private $nombre;
             private $contrasena;
             private $correo;
-            private $direccion;
-            private $formaDePago;
-            private $numeroTelefono;
-            private $lista;
-            private $carrito;
-
-
+            
             public function __construct(
-                    $nombre
-                    $contrasena,
+                    $nombre,
                     $correo,
-                    $direccion,
-                    $formaDePago,
-                    $numeroTelefono,
-                    $lista,
-                    $carrito,
+                    $contrasena                 
             ){
                         $this->nombre=$nombre;
                         $this->correo=$correo;
                         $this->contrasena=$contrasena;                        
-                        $this->direccion=$direccion;
-                        $this->formaDePago=$formaDePago;
-                        $this->numeroTelefono=$numeroTelefono;
-                        $this->lista=$lista;
-                        $this->carrito=$carrito;
             }
             
             /**
@@ -37,7 +21,6 @@
             {
                 return $this->nombre;
             }
-
             /**
              * Set the value of nombre
              *
@@ -49,7 +32,6 @@
 
                 return $this;
             }
-
             /**
              * Get the value of contrasena
              */ 
@@ -57,7 +39,6 @@
             {
                 return $this->contrasena;
             }
-
             /**
              * Set the value of contrasena
              *
@@ -69,7 +50,6 @@
 
                 return $this;
             }
-
             /**
              * Get the value of correo
              */ 
@@ -77,7 +57,6 @@
             {
                 return $this->correo;
             }
-
             /**
              * Set the value of correo
              *
@@ -90,94 +69,11 @@
                 return $this;
             }
 
-            /**
-             * Get the value of direccion
-             */ 
-            public function getDireccion()
-            {
-                return $this->direccion;
-            }
-
-            /**
-             * Set the value of direccion
-             *
-             * @return  self
-             */ 
-            public function setDireccion($direccion)
-            {
-                $this->direccion = $direccion;
-
-                return $this;
-            }
-
-            /**
-             * Get the value of formaDePago
-             */ 
-            public function getFormaDePago()
-            {
-                return $this->formaDePago;
-            }
-
-            /**
-             * Set the value of formaDePago
-             *
-             * @return  self
-             */ 
-            public function setFormaDePago($formaDePago)
-            {
-                $this->formaDePago = $formaDePago;
-
-                return $this;
-            }
-
-            /**
-             * Get the value of numeroTelefono
-             */ 
-            public function getNumeroTelefono()
-            {
-                return $this->numeroTelefono;
-            }
-
-            /**
-             * Set the value of numeroTelefono
-             *
-             * @return  self
-             */ 
-            public function setNumeroTelefono($numeroTelefono)
-            {
-                $this->numeroTelefono = $numeroTelefono;
-
-                return $this;
-            }
-
-            public function agregarUsuario(){
-                $Usuarios = json_decode(file_get_contents("../data/usuarios.json"),true);
-                        
-                $u["nombre"]=$this->nombre;
-                $u["contrasena"]=$this->contrasena;
-                $u["correo"]=$this->correo;
-                $u["direccion"]=$this->direccion;
-                $u["formaDePago"]=$this->formaDePago;
-                $u["numeroTelefono"]=$this->numeroTelefono;
-                $u["lista"]=$this->lista;
-                $u["carrito"]=$this->carrito;
-            
-            
-                
-                $Usuarios[] = $u;
-                $archivo = fopen("../data/usuarios.json","w");
-                fwrite($archivo, json_encode($Usuarios));
-            }
-            
-            public function agregarFormaDePago($nombreTarjeta, $numeroTarjeta){
-
-            }
 
             public function __toString(){
                 $a["nombre"] = $this->nombre;
                 $a["correo"] = $this->correo;
-                $a["contraseña"] = $this->contraseña;
-                $a["Recontraseña"] = $this->Recontraseña;
+                $a["contrasena"] = $this->contrasena;
                 return json_encode($a);
             }
             
@@ -187,7 +83,7 @@
                 fclose($archivo);
                 return $this->__toString();
             }
-
+            
 
     }
 

@@ -67,6 +67,7 @@ function desplegarLista1(){
      ${lista1[i].opcion}
    </a><br>`);
   }
+  $('#lista').append(`<a class="dropdown-item" href="ajax/cerrar-sesion.php">Sign Out</a><br>`);
 }
 
 function desplegaridiomas(){

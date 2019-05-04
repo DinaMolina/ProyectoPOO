@@ -1,0 +1,4 @@
+'nombre='+$("#nombre").val()+"&"+
+                          'correo='+$("#correo").val()+"&"+
+                          'contrasena='+$("#contrasena").val()+"&"+
+                          'recontrasena='+$("#recontrasena").val();

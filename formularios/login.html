@@ -13,14 +13,18 @@
         <div id="login">
             <h1>Sign In</h1>
             <h5>Email (phone por mobile accounts)</h6>
-            <input class="caja-texto" type="email">
+            <input id="correo" class="caja-texto" type="email">
             <h5> Password<a class="password" href="">  Forgot your password?</a></h5>
-            <input class="caja-texto" type="password">
-            <input type="button" value="Sign In">         
+            <input id="contrasena" class="caja-texto" type="password">
+            <button id="btn-login" type="button">Sign In</button>        
             <p><input type="checkbox">Keep me signed in. <a href=>Details</a></p><br>
             <div id="New" align="center"> New to Amazon?
                <a href="registro.html"><input type="button" value="Create your Amazon account"></a> 
             </div>
         </div>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="js/controlador.js"></script>
     </body>
 </Html>
