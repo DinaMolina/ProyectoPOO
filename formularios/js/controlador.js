@@ -17,8 +17,8 @@ $('#btn-guardar').click(function(){
             method:"POST",
             dataType:"json",
             success:function(datos){
+              console.log(datos);
               window.location.href = "../index.html";
-
             },
             error:function(error){
                 console.error(error);
@@ -27,4 +27,24 @@ $('#btn-guardar').click(function(){
       }else{
         alert("Datos Erroneos");
       }  
+});
+$("#btn-login").click(function(){
+  var parametros = "correo="+$("#correo").val()+"&contrasena="+$("#contrasena").val();
+  $.ajax({
+      url:"../ajax/login.php",
+      data:parametros,
+      method:"POST",
+      dataType:"json",
+      success:function(respuesta){
+          console.log(respuesta);
+          if (respuesta.estatus == 1){
+              window.location.href = "../index.html";   
+          }else{
+            alert("Datos Erroneos");
+          }
+      },
+      error:function(error){
+          console.error(error);
+      }
+  });
 });

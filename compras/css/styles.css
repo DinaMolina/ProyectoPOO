@@ -116,7 +116,7 @@
     width: fit-content;
 }
 
-<<<<<<< HEAD
+/*HEAD*/
 .precio{
     margin-left: 850px;
     margin-top: -60px;
@@ -128,7 +128,7 @@
     width: 50px;
     background-color: white !important;
     color: black;
-=======
+}
 /*Electronics-Toys*/
 #div-electronics-toys{
     background-color: white;
@@ -258,7 +258,6 @@ h1{
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 1rem 3rem 1rem;
->>>>>>> bcc7588c578d238fc2c05e6bc801b5fe3fc8fb3e
 }
 .card-title{
     margin-bottom: 0px;
