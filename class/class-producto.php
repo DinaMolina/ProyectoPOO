@@ -141,5 +141,30 @@
         public static function obtenerProductos(){
                 return file_get_contents("./data/producto.json");
         }
+        public function __toString(){
+                $a["nombreProducto"] = $this->nombreProducto;
+                $a["precio"] = $this->precio;
+                $a["departamento"] = $this->departamento;
+                $a["imagen"] = $this->imagen;
+                $a["descripcion"] = $this->descripcion;
+                $a["codigoProducto"] = $this->codigoProducto;
+                return json_encode($a);
+            }
+         public function guardarProductoEnCarrito(){
+                $item = json_decode(file_get_contents("../data/carrito.json"),true);
+                $t=json_decode($this->__toString(), true);  
+                $item[] = $t;   
+                $data= json_encode($item);
+                $archivo=file_get_contents("../data/carrito.json");   
+                file_put_contents($archivo,$data);
+            }
+        public function guardar(){
+        $tarjetas = json_decode(file_get_contents("../data/carrito.json"),true);
+        $t=json_decode($this->__toString(), true);  
+        $tarjetas[] = $t;
+        $archivo = fopen("../data/carrito.json","w");
+        fwrite($archivo, json_encode($tarjetas)."\n");
+        fclose($archivo);
+        }
     }    
 ?>

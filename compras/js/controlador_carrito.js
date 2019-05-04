@@ -90,9 +90,8 @@ function listarProductos(){
 		dataType:"json",
 		success:function(res){
       console.log(res);
-      cant=1;
 			for(var i=0;i<res.length;i++){
-				$("#productoCarrito").append(`<div class="card mb-3">
+				$("#productoCarrito").append(`<div class="card mb-3" style="margin-top: 42px; width: 800px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
                   <img src="${res[i].imagen}" class="card-img" alt="...">
@@ -102,7 +101,7 @@ function listarProductos(){
                     <a href="#" class="card-title">${res[i].nombreProducto}</a>
                   </div>
               </div>
-              <p class="precio">${res[i].precio}</p> 
+              <p class="precio2">${res[i].precio}</p> 
                      <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle cantidad" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         </button>
@@ -135,27 +134,28 @@ function listarProductos(){
 function guardar(){
 	$('#btn-agregar-carrito').click(function(){
     console.log('Ejecutar peticion asincrona');
-		var parametros = 'nombreProducto='+document.getElementById("nombreProducto").innerText + "&"+'precio='+document.getElementById("precio").innerText+"&"+'imagen='+document.getElementById("imagen").getAttribute("src")
+		var parametros = 'nombreProducto='+document.getElementById("nombreProducto").innerText + "&"+'precio='+document.getElementById("precio").innerText+"&"+'imagen='+document.getElementById("imagen").getAttribute("src");
 		console.log("Esto se enviará al servidor: "+parametros);
 	
 		$.ajax({
-				url:"../ajax/carrito.php?accion=guardar",
+				url:"../ajax/carrito.php?accion=agregar",
 				method:"POST",
 				data:parametros, 
 				dataType: 'json', 
 				success:function(respuesta){
-						console.log(respuesta);
+            console.log(respuesta);
+            if(respuesta=='ok'){
 						$("#agregado").append(`<div class="card mb-3">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="${respuesta[i].imagen}" class="card-img" alt="...">
+                <img src="${document.getElementById("imagen").getAttribute}" class="card-img" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body" style="width: 190px;">
-                  <a href="#" class="card-title">${respuesta[i].nombreProducto}</a>
+                  <a href="#" class="card-title">${document.getElementById("nombreProducto").innerText}</a>
                 </div>
             </div>
-            <p class="precio">${respuesta[i].precio}</p> 
+            <p class="precio">${document.getElementById("precio").innerText}</p> 
                    <div class="dropdown">
                       <button class="btn btn-secondary dropdown-toggle cantidad" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       </button>
@@ -175,7 +175,7 @@ function guardar(){
             </div> 
 						`);
 						 
-				},
+				}},
 				error:function(error){
 						console.error(error);
 				}
