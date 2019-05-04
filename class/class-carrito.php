@@ -48,12 +48,17 @@
 
                 return $this;
         }
-
         public function __toString(){
-                $a["producto"]=$this->producto;
-                $a["cantidad"]=$this->cantidad;
+                $a["producto"] = $this->producto;
+                $a["cantidad"] = $this->cantidad;
                 return json_encode($a);
-        }
+            }
+            public function agregar(){
+                $item = json_decode(file_get_contents("../data/carrito.json"),true);
+                $t=json_decode($this->__toString(), true);     
+                file_put_contents($item,$t);
+            }
+
         public function agregarProductoCarrito(){
                 $productos = json_decode(file_get_contents("../data/carrito.json"),true); 
                 $p["producto"]=$this->producto;
