@@ -27,18 +27,23 @@ $('#btn-guardar').click(function(){
 });
 
 $("#btn-login").click(function(){
-    var parametros = {
-      'correo':$("#correo").val(),
-      'contrasena':$("#contrasena").val()
-    };
+    var parametros = "correo="+$("#correo").val() + "&contrasena="+$("#contrasena").val();
     console.log(parametros);
     $.ajax({
-        url:"../ajax/usuario.php?accion=verificar",
+        url:"../ajax/login.php",
         data:parametros,
         method:"POST",
         dataType:"json",
         success:function(res){
-          window.location.href = "../index.html";
+          console.log(res);
+          if(res.estatus == 1){
+            window.location.href = "../index.html";
+          }else{
+            alert("Datos Erroneos");
+          }
+        },
+        error:function(error){
+          console.error(error);
         }
     });
 });

@@ -15,11 +15,9 @@
                 if(
                     $_POST["correo"]==$registro["correo"] &&
                     $_POST["contrasena"]==$registro["contrasena"]
-                ){
+                ){  
                     echo json_encode($registro);
                     exit;
                 }
             }
-            
-    }
 ?>
