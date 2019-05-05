@@ -9,8 +9,10 @@
                     $_POST["region"], 
                     $_POST["codigoPostal"], 
                     $_POST["pais"], 
-                    $_POST["telefono"], 
-                    $_POST["tarjeta"], 
+                    $_POST["telefono"],
+                    $_POST["fechaEntrega"], 
+                    $_POST["nombreTarjeta"],
+                    $_POST["numeroTarjeta"], 
                     $_POST["fechaVencimiento"],                
                 );
                 echo $Envio->guardar();

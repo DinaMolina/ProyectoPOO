@@ -7,7 +7,8 @@
     <title>Shipping & Payment</title>
     <link rel="shorcut icon" href="../img/amazon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/estilosbuynow.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilosbuynow.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <div class="div-top">
@@ -15,48 +16,80 @@
         <img class="image-top" src="../img/shippingpayment.gif" alt="ShippingPaymentImg">
         </div>
     </div>
-    <div class="a-container">
+    <div class="acontainer">
             <h1 class="spacing-base">Select a shipping address</h1>
             <div class="spacing-base">
                 <p>Please enter a shipping address for this order.</p>
             </div>
             <hr class="spacing-large">
-            <div class="a-row">
-                <div class="form">
-                    <h2>Enter a new shipping address.</h2>
-                    When finished, click the "Continue" button.
-                    <div id="FullnameContainer" class="a-row spacing-medium">
-                        <label for="Fullname"><b>Full name:&nbsp;</b></label><br>
-                         <input id="nombre" name="Fullname" class="caja-texto" type="text">
+            <div class="arow">
+                    <div class="form">
+                        <h2>Enter a new shipping address.</h2>
+                        When finished, click the "Continue" button.
+                        <div id="FullnameContainer" class="a-row spacing-medium">
+                            <label for="Fullname"><b>Full name:&nbsp;</b></label><br>
+                            <input id="nombre" name="Fullname" class="caja-texto" type="text">
+                        </div>
+                        <div id="AddressContainer" class="a-row spacing-medium">
+                                <label for="Address"><b>Address:&nbsp;</b></label><br>
+                                <input id="direccion" name="Address" class="caja-texto" type="text" placeholder="Street Address,company name,apartment,building,floor,etc">
+                        </div>
+                        <div id="CityContainer" class="a-row spacing-medium">
+                                <label for="City"><b>City:&nbsp;</b></label><br>
+                                <input id="ciudad" name="City" class="caja-texto" type="text">
+                        </div>
+                        <div id="RegionContainer" class="a-row spacing-medium">
+                                <label for="Region"><b>State/Province/Region:&nbsp;</b></label><br>
+                                <input id="region" name="Region" class="caja-texto" type="text">
+                        </div>
+                        <div id="ZipContainer" class="a-row spacing-medium">
+                                <label for="Zip"><b>ZIP:&nbsp;</b></label><br>
+                                <input id="codigoPostal" name="Zip" class="caja-texto" type="text">
+                        </div>
+                        <div id="CountryContainer" class="a-row spacing-medium">
+                                <label for="Country"><b>Country:&nbsp;</b></label><br>
+                                <select name="Country" id="pais"></select>
+                        </div>
+                        <div id="PhoneContainer" class="a-row spacing-medium">
+                            <label for="Phone"><b>Phone number:&nbsp;</b></label><br>
+                            <input id="telefono" name="Phone" class="caja-texto" type="text" size="15" maxlength="20">
+                        </div> 
+                    </div> 
+                    <hr class="spacing-top-title spacing-large">
+                    <h1 class="spacing-base">Choose your shipping options</h1>
+                    <hr class="spacing-large">
+                    <h2>Choose a delivery option:</h2>
+                    <div class="form">
+                            <label><input id="fecha1" type="radio" name="rbt-delivery" value="Thursday, May 30 - Wednesday, June 19">&nbsp;&nbsp;Thursday, May 30 - Wednesday, June 19</label><br>
+                            <label><input id="fecha2" type="radio" name="rbt-delivery" value="Thursday, May 16 - Tuesday, May 28">&nbsp;&nbsp;Thursday, May 16 - Tuesday, May 28</label><br>
+                            <label><input id="fecha3" type="radio" name="rbt-delivery" value="Wednesday, May 8 - Monday, May 13">&nbsp;&nbsp;Wednesday, May 8 - Monday, May 13</label><br>
                     </div>
-                    <div id="AddressContainer" class="a-row spacing-medium">
-                            <label for="Address"><b>Address:&nbsp;</b></label><br>
-                             <input id="direccion" name="Address" class="caja-texto" type="text" placeholder="Street Address,company name,apartment,building,floor,etc">
+                    <hr class="spacing-top-title spacing-large">
+                    <h1 class="spacing-base">Select a payment method</h1>
+                    <hr class="spacing-large">
+                    <h2>Add a Payment Method</h2>
+                    <hr>
+                    <div class="row payment-card spacing-base">
+                        <div class="col-lg-4">
+                            <h3>Credit or Debit Cards</h3>
+                            Amazon accepts all major credit and debit cards:
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="../img/credit-cards.gif" alt="Payment Cards">
+                        </div>
                     </div>
-                    <div id="CityContainer" class="a-row spacing-medium">
-                            <label for="City"><b>City:&nbsp;</b></label><br>
-                             <input id="ciudad" name="City" class="caja-texto" type="text">
+                    <div id="agregartarjeta" class="payment-card spacing-large">
+                          
                     </div>
-                    <div id="RegionContainer" class="a-row spacing-medium">
-                            <label for="Region"><b>State/Province/Region:&nbsp;</b></label><br>
-                             <input id="region" name="Region" class="caja-texto" type="text">
+                    <hr class="spacing-large">
+                    <div class="box-continue">
+                        <div><button id="btn-guardar" class="button-continue" type="button" disabled>Continue</button></div>
                     </div>
-                    <div id="ZipContainer" class="a-row spacing-medium">
-                            <label for="Zip"><b>ZIP:&nbsp;</b></label><br>
-                             <input id="codigopostal" name="Zip" class="caja-texto" type="text">
-                    </div>
-                    <div id="CountryContainer" class="a-row spacing-medium">
-                            <label for="Country"><b>Country:&nbsp;</b></label><br>
-                             <select name="Country" id="pais"></select>
-                    </div>
-                    
-                </div>
-            </div>
-        
+            </div>      
     </div>
         <script src="js/popper.min.js"></script>
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/controladorbuynow.js"></script>
+        <script src="js/controladorbuynow.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
