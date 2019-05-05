@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Place Your Order</title>
+    <link rel="shorcut icon" href="../img/amazon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilosbuynow.css?v=<?php echo time(); ?>">
+</head>
+<body id="body-placeorder">
+    <div class="div-top">
+        <div class="div-image">
+            <img class="image-top" src="../img/placeorder.gif" alt="PlaceOrderImg">
+        </div>
+    </div>
+    <div class="acontainer">
+        <h2 class="spacing-base">Review Your Order</h2>
+        <div class="box-informacion spacing-large">
+            <div id="informacionUsuario" class="row">
+                
+            </div>
+        </div>
+        <div class="box-informacion spacing-large">
+                <div id="informacionProducto" class="spacing-medium">
+                    <h3 class="spacing-base" style="color:#E47911;">Estimated Delivery:&nbsp;<span id="valorEntrega"></span></h3>
+                </div>
+        </div>
+        <div class="box-boton">
+            <button id="btn-placeOrder" class="spacing-medium" type="button">Place your order</button><br>
+            <div id="div-exito"></div>
+            <div id="condiciones">By placing your order, you agree to Amazon's <a href="../anchors.html" target="_blank" class="anchor-label">privacy notice</a> 
+            and <a href="../anchors.html" target="_blank" class="anchor-label">conditions of use.</a></div>
+        </div>
+
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controladorbuynow.js"></script>
+</body>
+</html>

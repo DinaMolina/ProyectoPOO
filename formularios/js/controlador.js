@@ -13,7 +13,7 @@ $("#btn-guardar").click(function(){
             dataType:"json",
             success:function(datos){
               console.log(datos);
-              window.location.href = "../index.html";
+              window.location.href = "index.php";
             },
             error:function(error){
                 console.error(error);
@@ -36,7 +36,7 @@ $("#btn-login").click(function(){
           console.log(res);
           if(res.estatus == 1){
 
-            window.location.href = "../index.php";
+            window.location.href = "index.php";
             
           }else{
             alert("Datos Erroneos");

@@ -148,7 +148,7 @@
     <div class="shop">
 
       <div class="htext">
-        <h1>Like-new Smartphones &nbsp;<a class="anchor" href="anchors.html">Shop now</a></h1>
+        <h1>Like-new Smartphones &nbsp;<a class="anchor" href="compras/paginaGenerica.1.html">Shop now</a></h1>
       </div>
       <!--Slider-->
       <div id="carouselIndicators1" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -223,7 +223,7 @@
     <div class="shop">
 
       <div class="htext">
-        <h1>Trending on videogames &nbsp;<a class="anchor" href="anchors.html">See more</a></h1>
+        <h1>Trending on videogames &nbsp;<a class="anchor" href="compras/paginaGenericalandingpage1.html">See more</a></h1>
       </div>
       <!--Slider-->
       <div id="carouselIndicators2" class="carousel slide" data-ride="carousel" data-interval="false">
