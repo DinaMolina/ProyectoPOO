@@ -88,14 +88,14 @@ h3{
     font-family: Arial,sans-serif;
 }
 
-a{
+.anchor-label{
     text-decoration: none !important;
-    color: #007eb9;
+    color: #007eb9 !important;
 }
 
-a:hover{
+.anchor-label:hover{
     text-decoration: underline !important;
-    color:#E88B32;
+    color:#E88B32 !important;
 }
 
 .field{

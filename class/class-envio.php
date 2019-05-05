@@ -7,6 +7,7 @@
         private $codigoPostal;
         private $pais;
         private $telefono;
+        private $fechaEntrega;
         private $nombreTarjeta;
         private $numeroTarjeta;
         private $fechaVencimiento;
@@ -19,6 +20,7 @@
             $codigoPostal,
             $pais,
             $telefono,
+            $fechaEntrega,
             $nombreTarjeta,
             $numeroTarjeta,
             $fechaVencimiento
@@ -30,6 +32,7 @@
             $this->codigoPostal=$codigoPostal;
             $this->pais=$pais;
             $this->telefono=$telefono;
+            $this->fechaEntrega=$fechaEntrega;    
             $this->nombreTarjeta=$nombreTarjeta;
             $this->numeroTarjeta=$numeroTarjeta;
             $this->fechaVencimiento=$fechaVencimiento;
@@ -177,6 +180,26 @@
         }
 
         /**
+         * Get the value of fechaEntrega
+         */ 
+        public function getfechaEntrega()
+        {
+                return $this->fechaEntrega;
+        }
+
+        /**
+         * Set the value of fechaEntrega
+         *
+         * @return  self
+         */ 
+        public function setfechaEntrega($fechaEntrega)
+        {
+                $this->fechaEntrega = $fechaEntrega;
+
+                return $this;
+        }
+
+        /**
          * Get the value of nombreTarjeta
          */ 
         public function getNombreTarjeta()
@@ -235,6 +258,7 @@
 
                 return $this;
         }
+        
         public function __toString(){
             $e["nombreCompleto"] = $this->nombreCompleto;
             $e["direccionEnvio"] = $this->direccionEnvio;
@@ -243,6 +267,7 @@
             $e["codigoPostal"] = $this->codigoPostal;
             $e["pais"] = $this->pais;
             $e["telefono"] = $this->telefono;
+            $e["fechaEntrega"] = $this->fechaEntrega;
             $e["nombreTarjeta"] = $this->nombreTarjeta;
             $e["numeroTarjeta"] = $this->numeroTarjeta;
             $e["fechaVencimiento"] = $this->fechaVencimiento;
