@@ -119,11 +119,13 @@
 .precio{
     margin-left: 850px;
     margin-top: -60px;
+    font-size: 17px;
 
 }
 .precio3{
     margin-left: 45px;
     margin-top: -40px;
+    
 
 }
 .cantidad{
@@ -147,6 +149,7 @@
 .cantidad2{
     margin-left: 1032px;
     margin-top: -35px;
+    font-size: 17px;
 }
 
 
@@ -221,8 +224,9 @@
 
 .producto-carrito{
     margin-top: 42px;
-    width: 800px;
-    height: 217px;
+    width: 720px;
+    height: 190px;
+    margin-left: 23px;
 }
 
 #cantidad-productos{
@@ -231,4 +235,9 @@
     margin-left: 22px;
     font-weight: bold;
     background-color: #232F3E;
+}
+
+.title-carrito{
+    margin-left: 260px;
+    font-size: 20px;
 }
