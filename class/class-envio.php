@@ -7,7 +7,8 @@
         private $codigoPostal;
         private $pais;
         private $telefono;
-        private $tarjeta;
+        private $nombreTarjeta;
+        private $numeroTarjeta;
         private $fechaVencimiento;
 
         public function __construct(
@@ -18,7 +19,8 @@
             $codigoPostal,
             $pais,
             $telefono,
-            $tarjeta,
+            $nombreTarjeta,
+            $numeroTarjeta,
             $fechaVencimiento
         ){
             $this->nombreCompleto=$nombreCompleto;
@@ -28,7 +30,8 @@
             $this->codigoPostal=$codigoPostal;
             $this->pais=$pais;
             $this->telefono=$telefono;
-            $this->tarjeta=$tarjeta;
+            $this->nombreTarjeta=$nombreTarjeta;
+            $this->numeroTarjeta=$numeroTarjeta;
             $this->fechaVencimiento=$fechaVencimiento;
         }
         
@@ -174,21 +177,41 @@
         }
 
         /**
-         * Get the value of tarjeta
+         * Get the value of nombreTarjeta
          */ 
-        public function getTarjeta()
+        public function getNombreTarjeta()
         {
-                return $this->tarjeta;
+                return $this->nombreTarjeta;
         }
 
         /**
-         * Set the value of tarjeta
+         * Set the value of nombreTarjeta
          *
          * @return  self
          */ 
-        public function setTarjeta($tarjeta)
+        public function setNombreTarjeta($nombreTarjeta)
         {
-                $this->tarjeta = $tarjeta;
+                $this->nombreTarjeta = $nombreTarjeta;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of numeroTarjeta
+         */ 
+        public function getNumeroTarjeta()
+        {
+                return $this->numeroTarjeta;
+        }
+
+        /**
+         * Set the value of numeroTarjeta
+         *
+         * @return  self
+         */ 
+        public function setNumeroTarjeta($numeroTarjeta)
+        {
+                $this->numeroTarjeta = $numeroTarjeta;
 
                 return $this;
         }
@@ -220,7 +243,8 @@
             $e["codigoPostal"] = $this->codigoPostal;
             $e["pais"] = $this->pais;
             $e["telefono"] = $this->telefono;
-            $e["tarjeta"] = $this->tarjeta;
+            $e["nombreTarjeta"] = $this->nombreTarjeta;
+            $e["numeroTarjeta"] = $this->numeroTarjeta;
             $e["fechaVencimiento"] = $this->fechaVencimiento;
             return json_encode($e);
         }
