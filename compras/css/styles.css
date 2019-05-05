@@ -80,12 +80,11 @@
 }
 
 .cuadro{
-    background-repeat: no-repeat;
-    width: 8rem;
-    height: 2rem;
-    border-color:#233040;
-    margin-left: 11px;
-    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    border-color: #233040;
+    margin-left: 114px;
+    margin-top: -32px;
 }
 .en{
     width: 2.5rem;
@@ -120,6 +119,12 @@
 .precio{
     margin-left: 850px;
     margin-top: -60px;
+
+}
+.precio3{
+    margin-left: 45px;
+    margin-top: -40px;
+
 }
 .cantidad{
     margin-left: 952px;
@@ -147,16 +152,68 @@
 
 .zona-botones{
     margin-left: 900px;
-    margin-top: -205px;
+    margin-top: -250px;
 }
 #btn-agregar-carrito{
     background-color:  #F0C14C;
+    width: 250px;
+    height: 28px;
+    font-size: 12px;
+    background-image: url("../icono/carro.png");
+    background-repeat: no-repeat;
 }
 .btn-buy{
     background-color:  #F0C14C;
     color: black;
+    width: 250px;
+    height: 28px;
+    font-size: 12px;
+    background-image: url("../icono/comprar.png");
+    background-repeat: no-repeat;
 }
-#btn-agregar-lista{
+.btn-agregar-lista{
     border-bottom-color: black;
     background-color: white;
+    width: 250px;
+    height: 28px;
+    font-size: 12px;
+    color: black;
+    margin-left: -95px;
+}
+.card-img{
+    width: auto;
+    margin-left: 17px;
+}
+.descripcion{
+    width: 650px;
+    margin-left: 150px;
+}
+
+.anuncio{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+#nombreProducto{
+    margin-left: 19px;
+    font-size: 17px;
+    font-weight: 550
+}
+.text{
+    margin-left: 15px;
+    font-size: 14px;
+    margin-top: 43px;
+}
+
+.caja{
+    font-size: 11px;
+    background-color: floralwhite;
+    border-color:#F0C14C;
+    margin-left: 15px;
+    width: 102px;
+}
+
+.div-producto{
+    max-width: 638px;
+    margin-left: 142px;
+    margin-top: 30px;
 }

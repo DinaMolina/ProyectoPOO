@@ -1,8 +1,8 @@
 <?php
     switch($_GET['accion']){
         case 'listar':
-        include("../class/class-carrito.php");
-        echo Carrito::listarProductos();
+        include("../class/class-lista.php");
+        echo Lista::listar();
         break;
         case 'agregar':
         include("../class/class-producto.php");
@@ -11,8 +11,8 @@
             $_POST['precio'],null,
             $_POST['imagen'],null,null
          );
-        $a->guardarCarrito();
-        echo ok;
+        $a->guardarLista();
+        echo $_POST['tipo'];
         break;
     }
 

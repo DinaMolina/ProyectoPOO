@@ -151,7 +151,7 @@
                 return json_encode($a);
             }
          
-        public function guardar(){
+        public function guardarCarrito(){
         $carrito = json_decode(file_get_contents("../data/carrito.json"),true);
         $t=json_decode($this->__toString(), true);  
         $carrito[] = $t;
@@ -159,5 +159,13 @@
         fwrite($archivo, json_encode($carrito)."\n");
         fclose($archivo);
         }
+        public function guardarLista(){
+                $lista = json_decode(file_get_contents("../data/lista.json"),true);
+                $t=json_decode($this->__toString(), true);  
+                $lista[] = $t;
+                $archivo = fopen("../data/lista.json","w");
+                fwrite($archivo, json_encode($lista)."\n");
+                fclose($archivo);
+                }
     }    
 ?>
