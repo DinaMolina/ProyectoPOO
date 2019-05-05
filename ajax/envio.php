@@ -1,7 +1,7 @@
 <?php
-    include("../class/class-envio.php");
     switch($_GET["accion"]){
         case "guardar":
+        include("../class/class-envio.php");
                 $Envio = new Envio( 
                     $_POST["nombreCompleto"],
                     $_POST["direccionEnvio"],
@@ -17,5 +17,9 @@
                 );
                 echo $Envio->guardar();
             break;
+        case "listar":
+        include("../class/class-envio.php");
+        echo Envio::listarInformacionEnvio();
+        break;
     }
 ?>

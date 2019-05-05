@@ -279,5 +279,14 @@
             fclose($archivo);
             return $this->__toString();
         }
+        public static function listarInformacionEnvio(){
+                $archivo = fopen("../data/envios.json","r");
+                $respuesta = array();
+                while(($linea=fgets($archivo))){
+                        $respuesta[] = json_decode($linea,true); //Convertir de cadena JSON a arreglo asociativo
+                }
+                echo json_encode($respuesta);
+                fclose($archivo);
+        }
     }
 ?>

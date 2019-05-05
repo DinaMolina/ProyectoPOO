@@ -129,6 +129,7 @@ $("#btn-guardar").click(function(){
       success:function(respuesta){
         console.log(respuesta);
         alert("Information Added Successfully");
+        window.location.href ="placeorder.html";
       },
       error:function(error){
         console.error(error);

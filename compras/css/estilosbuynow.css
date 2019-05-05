@@ -201,3 +201,50 @@ select{
     background:#EFBE41;
     border: 1px solid #957321;
 }
+
+/*PlaceOrder*/
+.box-informacion{
+    width: 60%;
+    min-width:200px;
+    padding:10px 25px;
+    border-radius: 4px !important;
+    border:1px solid #ddd !important;
+    background-color: white;
+}
+.box-boton{
+    width:290px;
+    min-width:100px;
+    padding:17px 19px;
+    border-radius: 4px !important;
+    border:1px solid #ddd !important;
+    background-color: white;
+}
+.box-boton button{
+    height:31px;
+    width:248px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid #bf942a;
+    background: #f0c14b;
+}
+.box-boton button:hover{
+    background:#EFBE41;
+    border: 1px solid #957321;
+}
+#div-exito{
+    color:#529900 !important;
+    display: none;
+}
+li{
+    list-style: none;
+}
+#body-placeorder{
+    font-size: 13px !important;
+    line-height: 19px !important;
+    font-family: Arial,sans-serif !important;
+}
+.card-img{
+    width: 124px;
+    height: 125px;
+    margin-left: 17px;
+}
