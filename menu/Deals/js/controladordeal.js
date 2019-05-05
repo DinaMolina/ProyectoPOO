@@ -18,10 +18,10 @@ var checkboxseemore=[
     {departamento:"Music"},{departamento:"PC & Video Games"},{departamento:"Software"}
 ];
 var buyitems=[
+    {departamento:"Deals",categoria:"Principal",imagen:"img/OneTouch.jpg",dealoftheday:false,precio:"$31.97",discount:"",producto:"iOttie Easy One Touch Wireless Qi Fast Charge Car Mount Kit",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/HitachiGas.jpg",dealoftheday:true,precio:"$96.75",discount:"Previous Price:  $149.95 (35% off)",producto:"Hitachi gas powered leaf blower",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/BambooMattressPad.jpg",dealoftheday:true,precio:"$83.99",discount:"Previous Price: $119.99 (30% off)",producto:"Rayon from Bamboo Mattress Pad",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/HamiltonBeachMixer.jpg",dealoftheday:false,precio:"$139.99",discount:"",producto:"Hamilton Beach Stand Mixer",boton:"Add to Cart"},
-    {departamento:"Deals",categoria:"Principal",imagen:"img/OneTouch.jpg",dealoftheday:false,precio:"$31.97",discount:"",producto:"iOttie Easy One Touch Wireless Qi Fast Charge Car Mount Kit",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/Whitesheets.jpg",dealoftheday:false,precio:"$28.04",discount:"",producto:"CGK Unlimited Twin XL Sheet Set - 3 Piece - Fits College Dorm Rooms - Hotel Luxury Bed Sheets",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/Retainercleaner.jpg",dealoftheday:false,precio:"$18.20",discount:"",producto:"Premium Denture Cleaner",boton:"Add to Cart"},
     {departamento:"Deals",categoria:"Principal",imagen:"img/AuxiwaClip.jpg",dealoftheday:false,precio:"$11.89",discount:"Previous Price: $19.99 (41% off)",producto:"Auxiwa Clip on Selfie Ring Light [Rechargeable Battery] with 36 LED for Smart Phone Camera Round Shape, White",boton:"Add to Cart"},
@@ -80,22 +80,41 @@ function generarListaPrincipalBuyItems(){
                     `
                 );
             }else{
-                $('#dealItems').append(
-                    `   <div class="td-dealitem col-xl-3 col-md-6 col-12">
-                            <a href="#">
-                                <div class="deal-imageitem" style="background-image: url(${buyitems[i].imagen});"></div>
-                            </a>
-                            <div class="dealContenido">
-                                <div class="dealItemsprice">${buyitems[i].precio}</div>
-                                <div style="margin-top:-3px;">${buyitems[i].discount}</div>
-                                <div class="dealItemstext">
-                                    <a class="anchor-label"href="#" style="font-size:10px;">${buyitems[i].producto}</a>
+                if(buyitems[i].producto=="iOttie Easy One Touch Wireless Qi Fast Charge Car Mount Kit"){
+                    $('#dealItems').prepend(
+                        `   <div class="td-dealitem col-xl-3 col-md-6 col-12">
+                                <a href="#">
+                                    <div class="deal-imageitem" style="background-image: url(${buyitems[i].imagen});"></div>
+                                </a>
+                                <div class="dealContenido">
+                                    <div class="dealItemsprice">${buyitems[i].precio}</div>
+                                    <div style="margin-top:-3px;">${buyitems[i].discount}</div>
+                                    <div class="dealItemstext">
+                                        <a class="anchor-label"href="../../compras/paginaGenerica.1.html" style="font-size:10px;">${buyitems[i].producto}</a>
+                                    </div>
                                 </div>
+                                <div class="button-dealItem"><button type="button">${buyitems[i].boton}</button></div>
                             </div>
-                            <div class="button-dealItem"><button type="button">${buyitems[i].boton}</button></div>
-                        </div>
-                    `
-                );
+                        `
+                    );
+                }else{
+                    $('#dealItems').append(
+                        `   <div class="td-dealitem col-xl-3 col-md-6 col-12">
+                                <a href="#">
+                                    <div class="deal-imageitem" style="background-image: url(${buyitems[i].imagen});"></div>
+                                </a>
+                                <div class="dealContenido">
+                                    <div class="dealItemsprice">${buyitems[i].precio}</div>
+                                    <div style="margin-top:-3px;">${buyitems[i].discount}</div>
+                                    <div class="dealItemstext">
+                                        <a class="anchor-label"href="#" style="font-size:10px;">${buyitems[i].producto}</a>
+                                    </div>
+                                </div>
+                                <div class="button-dealItem"><button type="button">${buyitems[i].boton}</button></div>
+                            </div>
+                        `
+                    );
+                }
             }
         }
     }
