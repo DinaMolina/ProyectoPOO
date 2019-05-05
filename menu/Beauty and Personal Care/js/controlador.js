@@ -1,7 +1,6 @@
 $(document).ready(function(){
     menu();
     desplegarLista1();
-    desplegaridiomas();
 });
 
 var departamentos=[    
@@ -15,9 +14,6 @@ var lista1=[
     {opcion:'Explore Idea Lists'},{opcion:'Explore Showroom'},{opcion:'Take the Home Style '},
 ];
 
-var idiomas=[
-    {idioma:''},{idioma:'English'},{idioma:'Español'},{idioma:'Portugues'},{idioma:'简体中文'},{idioma:'Deutsch - DE'},{idioma:'繁體中文 - ZH'},
-];
 
 function menu(){
     $('#menu').empty();
@@ -39,15 +35,6 @@ function desplegarLista1(){
     }
 }
 
-function desplegaridiomas(){
-    $('#idioma').empty();
-    for(var i=0; i<idiomas.length; i++){
-       $('#idioma').append(`<option value=${i}>
-       <label>${idiomas[i].idioma}<input type="radio" value=${idiomas[i].idioma}>
-       </label>
-       </option>` );
-    }
-}
 
 
 
