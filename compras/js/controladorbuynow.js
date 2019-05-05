@@ -93,14 +93,9 @@ function ocultarInputTarjeta(){
     `);
 }
 
-/*function comprobaropcionEntrega(){
-  if(document.getElementById("fecha1").checked){
-    valorFechaEntrega=document.getElementById("fecha1");
-  }
-}*/
 function agregarTarjeta(){
   var boton = document.getElementById("btn-guardar");
-  if($("#nombreTarjeta").val()!="" && $("#numeroTarjeta").val()!="" /*&& $("mes").val()!="" && $("#anio").val()!=""*/){
+  if($("#nombreTarjeta").val()!="" && $("#numeroTarjeta").val()!="" && $("mes").val()!="" && $("#anio").val()!=""){
     boton.disabled = true;
   }
   boton.disabled = false;
@@ -109,17 +104,17 @@ function agregarTarjeta(){
 $("#btn-guardar").click(function(){
   if(document.getElementById("fecha1").checked){
     valorFechaEntrega=document.getElementById("fecha1").value;
-  }
-  if(document.getElementById("fecha2").checked){
+  }else if(document.getElementById("fecha2").checked){
     valorFechaEntrega=document.getElementById("fecha2").value;
-  }
-  if(document.getElementById("fecha3").checked){
+  }else if(document.getElementById("fecha3").checked){
     valorFechaEntrega=document.getElementById("fecha3").value;
+  }else{
+    valorFechaEntrega = "";
   }
 
   if($("#nombre").val()!="" && $("#direccion").val()!="" && $("#ciudad").val()!="" && $("#region").val()!=""
-  && $("#codigoPostal").val()!="" && $("#pais").val()!="" && $("#telefono").val()!="" && $("#nombreTarjeta").val()!="" 
-  && $("#numeroTarjeta").val()!="" && $("mes").val()!="" && $("#anio").val()!=""){
+  && $("#codigoPostal").val()!="" && $("#pais").val()!="" && $("#telefono").val()!="" && valorFechaEntrega != ""
+  && $("#nombreTarjeta").val()!="" && $("#numeroTarjeta").val()!="" && $("mes").val()!="" && $("#anio").val()!=""){
     var parametros = "nombreCompleto="+$("#nombre").val()+"&direccionEnvio="+$("#direccion").val()
     +"&ciudad="+$("#ciudad").val()+"&region="+$("#region").val()+"&codigoPostal="+$("#codigoPostal").val()
     +"&pais="+$("#pais").val()+"&telefono="+$("#telefono").val()+"&fechaEntrega="+valorFechaEntrega
@@ -133,6 +128,7 @@ $("#btn-guardar").click(function(){
       dataType:"json",
       success:function(respuesta){
         console.log(respuesta);
+        alert("Information Added Successfully");
       },
       error:function(error){
         console.error(error);
@@ -161,11 +157,6 @@ var paises = [{pais:"Afghanistan"},{pais:"Albania"},{pais:"Argentina"},{pais:"Au
 {pais:"Sweden"},{pais:"Switzerland"},{pais:"Taiwan"},{pais:"Turkey"},{pais:"Ukraine"},{pais:"United Kingdom"},
 {pais:"United States"},{pais:"Uruguay"},{pais:"Venezuela"},{pais:"Vietnam"},{pais:"Yemen"},{pais:"Zambia"},
 {pais:"Zimbabwe"}];
-/*var meses = [{mes:1},{mes:2},{mes:3},{mes:4},{mes:5},{mes:6},{mes:7},{mes:8},{mes:9},{mes:10},{mes:11},{mes:12}];
-var anios = [{anio:2019},{anio:2020},{anio:2021},{anio:2022},{anio:2023},{anio:2024},{anio:2025},{anio:2026},
-  {anio:2027},{anio:2028},{anio:2029},{anio:2030},{anio:2031},{anio:2032},{anio:2033},{anio:2034},{anio:2035},
-  {anio:2036},{anio:2037},{anio:2038},{anio:2039}];*/
-
 
 function desplegarPaises(){
   $('#pais').empty();
@@ -173,15 +164,3 @@ function desplegarPaises(){
     $('#pais').append(`<option value="${paises[i].pais}">${paises[i].pais}</option>`);
   }
 }
-/*function desplegarMeses(){
-  $('#mes').empty();
-  for(var i=0;i<meses.length;i++){
-    $('#mes').append(`<option value="${i+1}">${meses[i].mes}</option>`);
-  }
-}
-function desplegarAnios(){
-  $('#anio').empty();
-  for(var i=0;i<anios.length;i++){
-    $('#anio').append(`<option value="${i+1}">${anios[i].anio}</option>`);
-  }
-}*/
