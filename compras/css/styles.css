@@ -181,7 +181,8 @@
     margin-left: -95px;
 }
 .card-img{
-    width: auto;
+    width: 124px;
+    height: 125px
     margin-left: 17px;
 }
 .descripcion{
@@ -216,4 +217,18 @@
     max-width: 638px;
     margin-left: 142px;
     margin-top: 30px;
+}
+
+.producto-carrito{
+    margin-top: 42px;
+    width: 800px;
+    height: 217px;
+}
+
+#cantidad-productos{
+    color:#E77600;
+    margin-top: -36px;
+    margin-left: 22px;
+    font-weight: bold;
+    background-color: #232F3E;
 }

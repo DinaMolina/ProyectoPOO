@@ -29,7 +29,7 @@
           </form>
         </div>
         <a class="navbar-brand" href="#"><img  src="../img/esquina.png" alt="LogoAmazon" > 
-        </a>
+        </a> 
       </nav>
 <!--Barra de opciones-->
      <div id="barraopciones">
@@ -74,16 +74,23 @@
                 </select>         
             </li> 
             <li>
-            <select id="lista" class="cuadro" style="background-image: url(../img/lista.png);" > 
-            </select>      
+                <img src="../img/lista.png">
+                <div class="dropdown menu cuadro" >
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" id="lista" aria-labelledby="dropdownMenuLink">
+                      
+                    </div>
+                  </div>         
             </li>
             <li>
               <a href="#"><img style="margin-left: 17px; margin-top: -3px;" src="../img/orden.png" alt="LogoAmazon" > 
               </a>
             </li>
             <li>
-                <button type="button" id="carrito" ><img style="margin-top: -5px; margin-left: -9px;" src="../img/carrito.png" alt="LogoAmazon" > 
-                </button>        
+                <button type="button" id="carrito" ><img style="margin-top: -5px; margin-left: -9px;" src="icono/carrito.png" alt="LogoAmazon" >
+                </button> 
+                <div id="cantidad-productos"></div>      
             </li>
           </ul>
      </div>

@@ -60,7 +60,7 @@ function listarProductos(){
 		success:function(res){
       console.log(res);
 			for(var i=0;i<res.length;i++){
-				$("#productoCarrito").append(`<div class="card mb-3" style="margin-top: 42px; width: 800px;">
+				$("#productoCarrito").append(`<div class="card mb-3 producto-carrito">
               <div class="row no-gutters">
                 <div class="col-md-4">
                   <img src="${res[i].imagen}" class="card-img" alt="...">
@@ -90,6 +90,7 @@ function listarProductos(){
               </div> 
         `);
       }
+      $("#cantidad-productos").append(`${res.length}`);
 		},
 		error:function(error){
 			console.error(error);
@@ -114,7 +115,7 @@ function guardar(){
 				success:function(respuesta){
             console.log(respuesta);
             if(respuesta=='ok'){
-						$("#agregado").append(`<div class="card mb-3">
+						$("#agregado").append(`<div class="card mb-3 producto-carrito">
             <div class="row no-gutters">
               <div class="col-md-4">
                 <img src="${document.getElementById("imagen").getAttribute}" class="card-img" alt="...">

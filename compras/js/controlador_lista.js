@@ -13,11 +13,12 @@ function mostrarProductos(){
 		success:function(res){
       console.log(res);
 			for(var i=0;i<res.length;i++){
-        if(res.tipo[i]=='WishList'){
+        switch (res[i].tipo){
+        case 'WishList':  
 				$("#WishList").append(`<div class="card mb-3 producto-lista" style="max-width: 540px;">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="${res[i].imagen}" class="card-img" alt="...">
+            <img src="${res[i].imagen}" class="card-img" style="width: inherit;">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -27,11 +28,12 @@ function mostrarProductos(){
         </div>
       </div>
         `);
-      } else{
-        $("#ShopingList").append(`<div class="card mb-3 producto-lista" style="max-width: 540px;">
+        break;
+       case 'ShoppingList':
+        $("#ShoppingList").append(`<div class="card mb-3 producto-lista" style="max-width: 540px;">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="${res[i].imagen}" class="card-img" alt="...">
+            <img src="${res[i].imagen}" class="card-img"  style="width: inherit;" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -40,9 +42,10 @@ function mostrarProductos(){
           </div>
         </div>
       </div>`);
-      }
+      break; 
     }
-		},
+   }
+  },
 		error:function(error){
 			console.error(error);
 		}
@@ -53,9 +56,9 @@ function mostrarProductos(){
 
 
 function guardarWishList(){
-	$('#agregar-wish-lista').click(function(){
+	$('#agregar-wish-list').click(function(){
     console.log('Ejecutar peticion asincrona');
-		var parametros = 'nombreProducto='+document.getElementById("nombreProducto").innerText + "&"+'precio='+document.getElementById("precio").innerText+"&"+'imagen='+document.getElementById("imagen").getAttribute("src")+"&"+'tipo='+'WishList';
+		var parametros = 'nombreProducto='+document.getElementById("nombreProducto").innerText +"&"+'imagen='+document.getElementById("imagen").getAttribute("src")+"&"+'tipo='+'WishList';
 		console.log("Esto se enviará al servidor: "+parametros);
 	
 		$.ajax({
@@ -65,10 +68,11 @@ function guardarWishList(){
 				dataType: 'json', 
 				success:function(respuesta){
             console.log(respuesta);
+              if(respuesta=='ok'){
               $("#nuevoProducto").append(`<div class="card mb-3 producto-lista" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="${document.getElementById("imagen").getAttribute("src")}" class="card-img" alt="...">
+                  <img src="${document.getElementById("imagen").getAttribute("src")}" class="card-img" alt="..." style="width: inherit;">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -77,7 +81,7 @@ function guardarWishList(){
                 </div>
               </div>
             </div>`);
-      },
+      }},
 				error:function(error){
 						console.error(error);
 				}
@@ -85,9 +89,9 @@ function guardarWishList(){
 	});
 }
 function guardarShoppingList(){
-	$('#agregar-wish-lista').click(function(){
+	$('#agregar-shopping-list').click(function(){
     console.log('Ejecutar peticion asincrona');
-		var parametros = 'nombreProducto='+document.getElementById("nombreProducto").innerText + "&"+'precio='+document.getElementById("precio").innerText+"&"+'imagen='+document.getElementById("imagen").getAttribute("src")+"&"+'tipo='+'WishList';
+		var parametros = 'nombreProducto='+document.getElementById("nombreProducto").innerText + "&"+'imagen='+document.getElementById("imagen").getAttribute("src")+"&"+'tipo='+'ShoppingList';
 		console.log("Esto se enviará al servidor: "+parametros);
 	
 		$.ajax({
@@ -97,10 +101,11 @@ function guardarShoppingList(){
 				dataType: 'json', 
 				success:function(respuesta){
             console.log(respuesta);
+          if(respuesta=='ok'){  
           $("#nuevoProducto2").append(`<div class="card mb-3 producto-lista" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="${document.getElementById("imagen").getAttribute("src")}" class="card-img" alt="...">
+                  <img src="${document.getElementById("imagen").getAttribute("src")}" class="card-img" alt="..." style="width: inherit;">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -109,7 +114,7 @@ function guardarShoppingList(){
                 </div>
               </div>
             </div>`);
-      },
+      }},
 				error:function(error){
 						console.error(error);
 				}

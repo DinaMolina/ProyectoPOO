@@ -159,9 +159,11 @@
         fwrite($archivo, json_encode($carrito)."\n");
         fclose($archivo);
         }
-        public function guardarLista(){
+        public function guardarLista($tipo){
                 $lista = json_decode(file_get_contents("../data/lista.json"),true);
-                $t=json_decode($this->__toString(), true);  
+                $t["nombreProducto"]=$this->nombreProducto;
+                $t["imagen"]=$this->imagen;
+                $t['tipo']=$tipo;
                 $lista[] = $t;
                 $archivo = fopen("../data/lista.json","w");
                 fwrite($archivo, json_encode($lista)."\n");

@@ -8,11 +8,11 @@
         include("../class/class-producto.php");
         $a = new Producto(
             $_POST['nombreProducto'],
-            $_POST['precio'],null,
+            null,null,
             $_POST['imagen'],null,null
          );
-        $a->guardarLista();
-        echo $_POST['tipo'];
+        $a->guardarLista($_POST['tipo']);
+        echo ok;
         break;
     }
 

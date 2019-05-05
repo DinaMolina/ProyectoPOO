@@ -22,15 +22,9 @@
     width: 520px;
     height: 550px;
 }
-.card-img{
-    max-width: 511.647px;
-    max-height: 550px;
-    height: 100%!important;
-}
 
-.price{
-    margin-left:0.8rem;
-}
+
+
 #boxitem{
     margin:4rem 0;;
 }
