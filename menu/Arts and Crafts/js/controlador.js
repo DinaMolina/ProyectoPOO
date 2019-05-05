@@ -1,7 +1,6 @@
 $(document).ready(function(){
     menu();
     desplegarLista1();
-    desplegaridiomas();
 });
 
 var departamentos=[    
@@ -17,9 +16,6 @@ var lista1=[
     {opcion:'Explore Idea Lists'},{opcion:'Explore Showroom'},{opcion:'Take the Home Style '},
 ];
 
-var idiomas=[
-    {idioma:''},{idioma:'English'},{idioma:'Español'},{idioma:'Portugues'},{idioma:'简体中文'},{idioma:'Deutsch - DE'},{idioma:'繁體中文 - ZH'},
-];
 
 var productos=[{titulo:'Iggy Peck, Architec', imagen:'img7/4.jpg', precio:'15.50'  },{titulo:'School Zone - Preschool Basics Workbook, 64 Pages, Ages 3 to 5, Colors, Numbers, Counting, Matching, Classifying, Beginning Sounds, and More (School Zone Basics Workbook Series', imagen:'img7/5.jpg', precio:'15.50'  },
 {titulo:'Origami Paper 500 sheets Kaleidoscope Patterns 6" (15 cm): Tuttle Origami Paper: High-Quality Origami Sheets Printed with 12 Different Designs: Instructions for 8 Projects Included', imagen:'img7/6.jpg', precio:'15.50'  },{titulo:'Rock Art Handbook: Techniques and Projects for Painting, Coloring, and Transforming Stones (Fox Chapel Publishing) Over 30 Step-by-Step Tutorials using Paints, Chalk, Art Pens, Glitter Glue & More', imagen:'img7/7.jpg', precio:'15.50'  },
@@ -50,15 +46,6 @@ function desplegarLista1(){
     }
 }
 
-function desplegaridiomas(){
-    $('#idioma').empty();
-    for(var i=0; i<idiomas.length; i++){
-       $('#idioma').append(`<option value=${i}>
-       <label>${idiomas[i].idioma}<input type="radio" value=${idiomas[i].idioma}>
-       </label>
-       </option>` );
-    }
-}
 
 
 

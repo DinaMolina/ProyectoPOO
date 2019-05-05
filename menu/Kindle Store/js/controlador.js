@@ -1,7 +1,6 @@
 $(document).ready(function(){
     menu();
     desplegarLista1();
-    desplegaridiomas();
     mostraritemCarrusel();
 });
 
@@ -18,9 +17,6 @@ var lista1=[
     {opcion:'Explore Idea Lists'},{opcion:'Explore Showroom'},{opcion:'Take the Home Style '},
 ];
 
-var idiomas=[
-    {idioma:''},{idioma:'English'},{idioma:'Español'},{idioma:'Portugues'},{idioma:'简体中文'},{idioma:'Deutsch - DE'},{idioma:'繁體中文 - ZH'},
-];
 var bestSellers=[    
     {image:'img1/1.jpg',title:'Map Of The Soul: PERSONA'
      , autor:'BTS', material:'Audio CD', price:'$20.99' }, 
@@ -69,15 +65,6 @@ function desplegarLista1(){
     }
 }
 
-function desplegaridiomas(){
-    $('#idioma').empty();
-    for(var i=0; i<idiomas.length; i++){
-       $('#idioma').append(`<option value=${i}>
-       <label>${idiomas[i].idioma}<input type="radio" value=${idiomas[i].idioma}>
-       </label>
-       </option>` );
-    }
-}
 
 function mostraritemCarrusel(){
     $('#carousel1').empty();
