@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Baby</title>
+    <link rel="shorcut icon" href="../imgcomunes/amazon.ico?v=<?php echo time(); ?>">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/upstyles.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/downstyles.css">
@@ -39,8 +40,14 @@
         </li>
   <!--Menú de los departamentos-->
         <li class="nav-item "> 
-          <select id="menu">   
-          </select>      
+          <div class="dropdown menu">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Departaments
+            </a>
+          
+            <div class="dropdown-menu" id="menu" aria-labelledby="dropdownMenuLink">
+            </div>
+          </div>      
         </li>
         <li class="nav-item ">
           <a  class="button" href="anchors.html">Your Amazon.com</a>
