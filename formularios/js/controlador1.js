@@ -7,14 +7,16 @@ $(document).ready(function(){
 });
 
 var postales= [
-    {descripcion:'Shop your favorite brands', imagen:'img/zapatos.jpg', titulo:"Men's Dress Shoes"},
-    {descripcion:'Find the perfect dress for any occasion', imagen:'img/vestidos.jpg', titulo:"Women's Dresses"},
-    {descripcion:'Shop top products in Baby', imagen:'img/bebé.jpg', titulo:'Baby'}
+    {descripcion:'Shop your favorite brands', imagen:'../img/zapatos.jpg', titulo:"Men's Dress Shoes"},
+    {descripcion:'Find the perfect dress for any occasion', imagen:'../img/vestidos.jpg', titulo:"Women's Dresses"},
+    {descripcion:'Shop top products in Baby', imagen:'../img/bebé.jpg', titulo:'Baby'}
 ];
 
 var departamentos=[    
-    {area:'Arts and Crafts' },{area:'Automotive' },{area:'Baby' },{area:'Beauty and Personal Care' },{area:'Computers' },{area:'Electronics' },
-    {area:'Kindle Store' },{area:'Music, CDs and Vinyl'},{area:'Pet Supplies' },{area:'Software' },{area:'Toys and Games' },{area:'Video Games'},{area:'Deals' }
+    {area:'Music, CDs and Vinyl'},{area:'Kindle Store' },{area:'Arts and Crafts' },{area:'Automotive' },{area:'Baby' },
+    {area:'Beauty and Personal Care' },{area:'Book' },{area:'Computers' },{area:'Electronics' },{area:"Women's Fashion" },{area:"Men's Fashion" },{area:'Health & Household' },
+    {area:'Home and kitchen' },{area:'Industrys & Scientific' },{area:'Luggage' },{area:'Movies & Televisor' },{area:'Pet Supplies' },{area:'Software' },{area:'Sports & Outdoors' },
+    {area:'Tools & Home Improvement' },{area:'Toys and Games' },{area:'Video Games' },{area:'Deals' },
 ];
 
 var lista1=[
@@ -51,7 +53,7 @@ function menu(){
     $('#menu').empty();
     for(var i=0; i<departamentos.length; i++){
        $('#menu').append(`
-       <a class="dropdown-item" href="menu/${departamentos[i].area}/${departamentos[i].area}.html">
+       <a class="dropdown-item" href="../menu/${departamentos[i].area}/${departamentos[i].area}.html">
          ${departamentos[i].area}
        </a><br>
         `);
@@ -65,7 +67,7 @@ function desplegarLista1(){
      ${lista1[i].opcion}
    </a><br>`);
   }
-  $('#lista').append(`<a class="dropdown-item" href="ajax/cerrar-sesion.php">Sign Out</a><br>`);
+  $('#lista').append(`<a class="dropdown-item" href="../ajax/cerrar-sesion.php">Sign Out</a><br>`);
 }
 
 function desplegaridiomas(){

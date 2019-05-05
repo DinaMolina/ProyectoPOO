@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("../class/class-usuario.php");
     switch($_GET["accion"]){
         case "guardar":
@@ -7,6 +8,7 @@
                                    $_POST["contrasena"]             
             );
            echo $Usuario->guardar();
+           $_SESSION["usuario"] = $_POST["nombre"];
             break;
     }
 ?>

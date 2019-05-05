@@ -84,16 +84,17 @@
 }
 
 .cuadro{
-    width: 10px;
-    height: 10px;
-    border-color: #233040;
-    margin-left: 114px;
-    margin-top: -32px;
+    background-repeat: no-repeat;
+    width: 8rem;
+    height: 2rem;
+    border-color:#233040;
+    margin-left: 11px;
+    margin-top: -5px;
 }
 .en{
     width: 3rem;
     height: 4rem;
-    margin-left: 108px;
+    margin-left: 120px;
     margin-top: -6px;
     border-color: transparent;
 }
@@ -682,22 +683,6 @@ cursor: pointer;
     box-shadow: 0 0 6px 0 #E77600;
 }
 #registro input[type="button"]{
-    width: 100%;
-    height: 30px;
-    color: black;
-    background-color: #F2CB6A;
-    border: 1px solid #9C7E31;
-    border-radius: 3px;
-}
-#registro button[type="button"]{
-    width: 100%;
-    height: 30px;
-    color: black;
-    background-color: #F2CB6A;
-    border: 1px solid #9C7E31;
-    border-radius: 3px;
-}
-#btn-guardar{
     width: 100%;
     height: 30px;
     color: black;

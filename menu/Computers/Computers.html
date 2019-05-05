@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Software</title>
+  <title>Computers</title>
   <link rel="shorcut icon" href="../imgcomunes/amazon.ico?v=<?php echo time(); ?>">
   <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/stylessoftware.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/stylestoysgames.css?v=<?php echo time(); ?>">
 </head>
 
 <body style="background-color:#FFFFFF">
@@ -25,7 +25,7 @@
           <li class="nav-item active">
         <form class="form-inline my-2 my-lg-0 "style="width: 100%;">
             <select class="all">
-                <option>Software</option>
+                <option>Toys & Games</option>
             </select>
             <input class="search-box form-control mr-sm-2 " type="search" aria-label="Search" style="background-image:url(../imgcomunes/lupa.png);">
         </form>
@@ -40,8 +40,8 @@
         <img src="../imgcomunes/lugar.png" style="width: 97px;
     height: 32px;">
       </li>
-       <!--Menú de los departamentos-->
-       <li class="nav-item ">
+      <!--Menú de los departamentos-->
+      <li class="nav-item ">
         <div class="dropdown menu" style="margin-left:32px;" >
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Departaments
@@ -74,13 +74,8 @@
         </select>
       </li>
       <li>
-        <img src="../imgcomunes/lista.png">
-        <div class="dropdown menu cuadro" >
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            </a>
-            <div class="dropdown-menu" id="lista" aria-labelledby="dropdownMenuLink">
-            </div>
-          </div>     
+        <select id="lista" class="cuadro" style="background-image: url(../imgcomunes/lista.png);">
+        </select>
       </li>
       <li>
         <a href="#"><img style="margin-left: 17px; margin-top: -3px;" src="../imgcomunes/orden.png" alt="LogoAmazon">
@@ -94,127 +89,110 @@
   </div>
 
   <div class="container-fluid">
-        <div class="row general-box">
-            <div class="software-boxleft">
-                <div class="boxleft-items">
-                    <p class="title-gray-left spacing-base"><b>Show Results For</b></p>
-                    <p class="title-black-left spacing-base">Format</p>
-                    <div class="list-item-left-nomargin spacing-base">
-                            <div>
-                                <a class="anchor-item-left" href="#">CD/DVD</a><br>
-                            </div>
-                    </div>
-                    <p class="title-black-left spacing-base">Operating System</p>
-                    <div class="list-item-left-nomargin">
-                            <div>
-                                <a class="anchor-item-left" href="#">Linux</a><br>
-                                <a class="anchor-item-left" href="#">Macintosh OS</a><br>
-                                <a class="anchor-item-left" href="#">Microsoft Windows</a><br>
-                            </div>
-                    </div>
-                    <hr>
-                    <p class="title-black-left spacing-base">Software</p>
-                    <div class="list-item-left">
+    <div class="row general-box">
+        <div class="toysgames-boxleft">
+            <div class="boxleft-items">
+                <p class="title-gray-left marginbottom"><b>Show Results For</b></p>
+                
+                <hr>
+                <p class="title-black-left margin-item nomargin">Computers</p>
+                <div class="list-item-left">
                         <div>
-                            <a class="anchor-item-left" href="#">Accounting & Finance</a><br>
-                            <a class="anchor-item-left" href="#">Education & Reference</a><br>
-                            <a class="anchor-item-left" href="#">Games</a><br>
-                            <a class="anchor-item-left" href="#">Networking & Servers</a><br>
-                            <a class="anchor-item-left" href="#">Operating Systems</a><br>
-                            <a class="anchor-item-left" href="#">Programming & Web</a><br>
-                            <a class="anchor-item-left" href="#">Development</a><br>
-                            <a class="anchor-item-left" href="#">Utilities</a><br>
-                        </div>
-                    </div>
-                    <hr>
-                    <p class="title-gray-left spacing-base"><b>Refine By</b></p>
-                    <p class="title-black-left spacing-base margin-item">New Releases</p>
-                    <div class="list-item-left-nomargin spacing-base">
-                        <div>
-                            <a class="anchor-item-left" href="#">Last 30 Days</a><br>
-                            <a class="anchor-item-left" href="#">Last 90 Days</a><br>
-                        </div>
-                    </div>
-                    <p class="title-black-left spacing-base">Featured Brands</p>
-                    <div class="checkbox-item spacing-base">
-                        <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands0" value="0"><span class="text-label">&nbsp;Scholastic</span></label><br>
-                        <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands1" value="1"><span class="text-label">&nbsp;Hal Leonard</span></label><br>
-                        <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands2" value="2"><span class="text-label">&nbsp;Random House</span></label><br>
-                    </div>
-                    <p class="title-black-left spacing-base">Packaging Option</p>
-                    <div class="checkbox-item spacing-base">
-                            <label><input type="checkbox" name="chk-packagingoption[]" id="chk-packagingoption0" value="0"><span class="text-label">&nbsp;Frustration-Free Packaging</span></label><br>
-                    </div>
-                    <p class="title-black-left spacing-base">Price</p>
-                    <div class="list-item-left-nomargin">
-                            <div>
-                                <a class="anchor-item-left" href="#">$0.01 to $5</a><br>
-                                <a class="anchor-item-left" href="#">$5 to $20</a><br>
-                                <a class="anchor-item-left" href="#">$20 to $50</a><br>
-                                <a class="anchor-item-left" href="#">$50 to $150</a><br>
-                                <a class="anchor-item-left" href="#">$150 & Above</a><br>
-                            </div>
-                    </div>
-                    <p class="title-black-left spacing-base margin-item">Seller</p>
-                    <div class="checkbox-item">
-                        <label><input type="checkbox" name="chk-seller[]" id="chk-seller0" value="0"><span class="text-label">&nbsp;Amazon.com</span></label><br>
-                        <label><input type="checkbox" name="chk-seller[]" id="chk-seller1" value="1"><span class="text-label">&nbsp;Jenson Books Inc</span></label><br>
-                        <label><input type="checkbox" name="chk-seller[]" id="chk-seller2" value="2"><span class="text-label">&nbsp;The Great Courses</span></label><br>
-                        <label><input type="checkbox" name="chk-seller[]" id="chk-seller3" value="3"><span class="text-label">&nbsp;Recover Books</span></label><br>
-                    </div>
-                    <p class="title-black-left spacing-base margin-item">Availability</p>
-                    <div class="checkbox-item">
-                        <label><input type="checkbox" name="chk-availability[]" id="chk-availability0" value="0"><span class="text-label">&nbsp;Include Out of Stock</span></label><br>
-                    </div>
-                </div> 
-            </div> 
-            <div class="principal-boxrightitems">
-                <div class="divfirsth1">
-                        <h1><b>Software</b></h1>
-                        <p>Shop for PC and Mac software including business, games, photography and more</p>
+                            <a class="anchor-item-left" href="#">Computer Accessories & Peripherals</a><br>
+                            <a class="anchor-item-left" href="#">Computer Components</a><br>
+                            <a class="anchor-item-left" href="#">Computers & Tablets</a><br>
+                            <a class="anchor-item-left" href="#">Data Storage</a><br>
+                            <a class="anchor-item-left" href="#">Laptop Accessories</a><br>
+                            <a class="anchor-item-left" href="#">Networking Products</a><br>
+                            <a class="anchor-item-left" href="#">Power Strips & Surge Protectors</a><br>
+                            <a class="anchor-item-left" href="#">Tablet Accessories</a><br>
+                          </div>
                 </div>
                 <hr>
-                <div class="marginbottom">
-                        <div class="title-secondary">SHOP BY CATEGORY</div>
-                        <div class="row category-row">
-                            <div class="col-xl-3 col-md-6 col-sm-12">
-                                <a class="anchor-category" href="#">
-                                        <div class="text-category">BUSINESS & OFFICE</div>
-                                        <div class="category-imageitem" style="background-image: url(img/categorybusinessoffice.jpg);"></div>
-                                </a>
-                            </div>
-                            <div class="col-xl-3 col-md-6 col-sm-12">
-                                    <a class="anchor-category" href="#">
-                                            <div class="text-category">GAMES</div>
-                                            <div class="category-imageitem" style="background-image: url(img/categorygames.jpg);"></div>
-                                    </a>
-                            </div>
-                            <div class="col-xl-3 col-md-6 col-sm-12">
-                                    <a class="anchor-category" href="#">
-                                            <div class="text-category">PHOTOGRAPHY</div>
-                                            <div class="category-imageitem" style="background-image: url(img/categoryphotography.jpg);"></div>
-                                    </a>
-                            </div>
-                            <div class="col-xl-3 col-md-6 col-sm-12">
-                                    <a class="anchor-category" href="#">
-                                            <div class="text-category">VIDEO</div>
-                                            <div class="category-imageitem" style="background-image: url(img/categoryvideo.jpg);"></div>
-                                    </a>
-                            </div>
+                
+                <p class="title-black-left spacing-base">Featured Brands</p>
+                <div class="checkbox-item spacing-basemedium">
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands0" value="0"><span class="text-label">&nbsp;Chronicle Books</span></label><br>
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands1" value="1"><span class="text-label">&nbsp;Valoin</span></label><br>
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands2" value="2"><span class="text-label">&nbsp;Cellet</span></label><br>
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands3" value="3"><span class="text-label">&nbsp;SanDisk</span></label><br> 
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands3" value="4"><span class="text-label">&nbsp;Viking</span></label><br> 
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands3" value="5"><span class="text-label">&nbsp;HP</span></label><br>
+                    <label><input type="checkbox" name="chk-featuredbrands[]" id="chk-featuredbrands3" value="6"><span class="text-label">&nbsp;Generic</span></label><br>           
+                  </div>
+                <p class="title-black-left spacing-basesmall margin-item">Price</p>
+                <div class="list-item-left-nomargin spacing-base">
+                        <div>
+                            <a class="anchor-item-left" href="#">Under $25</a><br>
+                            <a class="anchor-item-left" href="#">$25 to $50</a><br>
+                            <a class="anchor-item-left" href="#">$50 to $100</a><br>
+                            <a class="anchor-item-left" href="#">$100 to $200</a><br>
+                            <a class="anchor-item-left" href="#">$200 & Above</a><br>
                         </div>
                 </div>
-                <hr>
-                <div class="container">
-                    <div class="row" id="softwareItems">
-                        
-                    </div>
+                <p class="title-black-left spacing-base margin-item">Seller</p>
+                <div class="checkbox-item">
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller0" value="0"><span class="text-label">&nbsp;Amazon.com</span></label><br>
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller1" value="1"><span class="text-label">&nbsp;Hawthorne Academic</span></label><br>
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller2" value="2"><span class="text-label">&nbsp;Jenson Books Inc</span></label><br>
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller3" value="3"><span class="text-label">&nbsp;Murfbooks</span></label><br>
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller0" value="4"><span class="text-label">&nbsp;Recover Books</span></label><br>
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller1" value="5"><span class="text-label">&nbsp;Henxidi books</span></label><br>
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller2" value="6"><span class="text-label">&nbsp;BGDG Enterprises</span></label><br>
+                    <label><input type="checkbox" name="chk-seller[]" id="chk-seller3" value="7"><span class="text-label">&nbsp;Bolo4Momma</span></label><br>
+                  </div>
+                <p class="title-black-left spacing-base margin-item">Availability</p>
+                <div class="checkbox-item">
+                    <label><input type="checkbox" name="chk-availability[]" id="chk-availability0" value="0"><span class="text-label">&nbsp;Include Out of Stock</span></label><br>
                 </div>
-            </div>      
+            </div>
         </div>
+        <div class="principal-boxrightitems">
+            <div class="divfirsth1">
+                <h1><b>Computers, Tablets and IT Accessories</b></h1>
+                <p>Shop laptops, desktops, monitors, tablets, PC gaming, hard drives and storage, accessories and more</p>
+            </div>
+            <hr>
+            <div class="marginbottom">
+                <div class="title-secondary">SHOP BY CATEGORY</div>
+                <div class="row category-row">
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">ACCESORIES & SUPPLIES</div>
+                                <div class="category-imageitem" style="background-image: url(img/p1.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">CAMERA % PHOTO</div>
+                                <div class="category-imageitem" style="background-image: url(img/p2.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">CAR & VEHICLE ELECTRONICS</div>
+                                <div class="category-imageitem" style="background-image: url(img/p3.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 spacing-basemax">
+                        <a class="anchor-category" href="#">
+                                <div class="text-category">COMPUTER & ACCESORIOS</div>
+                                <div class="category-imageitem" style="background-image: url(img/p4.jpg);"></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container margintop">
+                <div class="row" id="productos">
+                        
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
   <footer>
         <div class="navfooter">
-          <div class="backtop"><a href="software.html">Back to top</a></div>
+          <div class="backtop"><a href="toysgames.html">Back to top</a></div>
           <div class="container">
             <div class="row navfooterrowbox">
               <div class="col-lg-3 col-md-6 col-12 navfooterboxlist">
@@ -502,11 +480,10 @@
         </div>
       </footer>
        
-      <script src="js/popper.min.js"></script>
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/controlador.js?v=<?php echo time(); ?>"></script>
-      <script src="js/controladorsoftware.js"></script>
-    </body>
+      <script src="../../js/popper.min.js"></script>
+      <script src="../../js/jquery-3.3.1.min.js"></script>
+      <script src="../../js/bootstrap.min.js"></script>
+      <script src="js/controlador.js"></script>
+      
     
     </html>

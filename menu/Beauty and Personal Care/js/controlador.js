@@ -4,10 +4,8 @@ $(document).ready(function(){
 });
 
 var departamentos=[    
-    {area:'Music, CDs and Vinyl'},{area:'Kindle Store'},{area:'Arts and Crafts'},{area:'Automotive'},{area:'Baby'},
-    {area:'Beauty and Personal Care'},{area:'Book'},{area:'Computers'},{area:'Electronics'},{area:"Women's Fashion"},{area:"Men's Fashion"},{area:'Health and Household'},
-    {area:'Home and kitchen'},{area:'Industrys and Scientific'},{area:'Luggage'},{area:'Movies and Televisor'},{area:'Pet Supplies'},{area:'Software'},{area:'Sports and Outdoors'},
-    {area:'Tools and Home Improvement'},{area:'Toys and Games'},{area:'Video Games'},{area:'Deals'},
+    {area:'Arts and Crafts' },{area:'Automotive' },{area:'Baby' },{area:'Beauty and Personal Care' },{area:'Computers' },{area:'Electronics' },
+    {area:'Kindle Store' },{area:'Music, CDs and Vinyl'},{area:'Pet Supplies' },{area:'Software' },{area:'Toys and Games' },{area:'Video Games'},{area:'Deals' }
 ];
 
 var lista1=[
