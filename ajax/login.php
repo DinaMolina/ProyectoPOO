@@ -1,6 +1,7 @@
 <?php
     session_start();
     $archivo = fopen("../data/usuarios.json","r");
+    
     while(($linea=fgets($archivo))){
         $registro = json_decode($linea,true);
         if (
@@ -8,6 +9,7 @@
             ($_POST["contrasena"])==$registro["contrasena"]
         ){
             $registro["estatus"] = "1";
+            $_SESSION["usuario"] = $registro["nombre"];
             echo json_encode($registro);
             exit;
         }

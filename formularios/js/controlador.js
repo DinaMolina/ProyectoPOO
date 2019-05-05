@@ -35,7 +35,9 @@ $("#btn-login").click(function(){
         success:function(res){
           console.log(res);
           if(res.estatus == 1){
-            window.location.href = "../index.html";
+
+            window.location.href = "../index.php";
+            
           }else{
             alert("Datos Erroneos");
           }
